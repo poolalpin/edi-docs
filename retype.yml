@@ -1,5 +1,6 @@
 input: .
 output: .retype
+locale: de
 url: docu.pool-alpin.work
 branding:
   #title: POOL-ALPIN
