@@ -78,6 +78,8 @@ max. 255 Zeichen
 [!badge orderUnit] :heavy_check_mark:
 ||| Format
 Text
+||| Standardeinheit
+Stück
 |||
 - Einheit, in der das Produkte bestellt werden kann; es können nur Vielfache dieser
 Einheit bestellt werden.
@@ -94,8 +96,6 @@ Inhaltsmenge: **6**
 [!badge contentUnit]
 ||| Format
 Text
-||| Standardeinheit
-Stück
 |||
 - Einheit des Produktes innerhalb einer Bestelleinheit
 !!! warning
