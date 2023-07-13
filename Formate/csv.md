@@ -68,7 +68,7 @@ Text
 Text
 |||
 - Die Kurzbeschreibung des Artikels, die im Shop auf den Artikelkarten, sowie den PDF-Belegen angezeigt wird.  
-!!!
+!!!warning
 max. 255 Zeichen
 !!!
 ---
@@ -84,8 +84,8 @@ Einheit bestellt werden.
 Preis.
 !!!Beispiel
 Kiste Mineralwasser mit 6 Flaschen  
-Bestelleinheit: "Kiste", Inhaltseinheit des Artikels: "Flasche"  
-Inhaltsmenge: "6"
+Bestelleinheit: **Kiste**, Inhaltseinheit des Artikels: **Flasche**  
+Inhaltsmenge: **6**
 !!!
 ---
 ## Inhaltseinheit
@@ -257,6 +257,24 @@ Text
 [!badge variant="secondary" icon="note" text="Begriff1,Bergriff2,Begriff3,..."]
 ---
 ## Artikelbilder und Dokumente
+||| Feldname
+[!badge files]
+||| Format
+Text
+|||
+!!!success Wichtig
+Links zu den Dateien werden bevorzugt, diese werden dann automatisch in den Webshop geladen!  
+[!badge variant="secondary" icon="note" text="http(s)://example.com/bilder/artikelbild1.jpg"]
+!!!
+- Artikelbilder (.jpg|.png|.webp) und Datenblätter (.pdf) sind möglich
+- Die erste Bilddatei wird zum Vorschaubild
+- Mehrere Dateien mittels Feld/Spaltenwiederholung darstellen 
+
+files1   | files2 | filess | ... {class="compact"}
+---    | ---  | --- | ---
+[!badge variant="secondary" icon="note" text="http(s)://example.com/bilder/artikelbild1.jpg"] | [!badge variant="secondary" icon="note" text="http(s)://example.com/bilder/artikelbild2.jpg"] | [!badge variant="secondary" icon="note" text="http(s)://example.com/bilder/datenblatt1.pdf"] | ...
+
+---
 
 Lieferstatus
 Lieferzeit
