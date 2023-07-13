@@ -20,7 +20,7 @@ Artikelnummern müssen **eindeutig** sein. Wird meist über eine Erweiterung hin
 [!badge variant="secondary" icon="note" text="123456-001"]
 !!!
 ---
-## Varianten-Artikelcode
+## en-Artikelcode
 ||| Feldname
 [!badge groupId]
 ||| Format
@@ -50,7 +50,7 @@ Darf nur 12 oder 13 Stellen haben
 Text
 |||  
 
-- Die Bezeichnung oder Name des Artikels
+- Die Bezeichnung oder Name des Artikels  
 [!badge variant="secondary" icon="note" text="T-Shirt Unisex Baumwolle Gr.M"]
 ---
 ## Artikelbeschreibung
@@ -133,7 +133,7 @@ Ganz- oder Dezimalzahl
 ||| Format
 Ganz- oder Dezimalzahl
 |||
-- Verpflichtende Mindesbestellmenge für das Produkt, bezogen auf die [Bestelleinheit](#bestelleinheit)
+- Verpflichtende Mindestbestellmenge für das Produkt, bezogen auf die [Bestelleinheit](#bestelleinheit)
 ---
 ## Bestellintervall-Menge
 ||| Feldname
@@ -241,7 +241,7 @@ categories1   | categories2 | categories3 | ... {class="compact"}
 ||| Feldname
 [!badge eclass] :heavy_check_mark:
 ||| Format
-Ganzzahl
+Text
 |||
 - Kategorie des Artikels nach [!badge variant="info "target="blank" text="eClass"](https://eclass.eu/eclass-standard/einfuehrung) Standard  
 - Ermöglicht die automatische Kategorie-Zuweisung im Webshop  
@@ -255,7 +255,7 @@ Text
 |||
 - Ein oder mehrere Suchbegriffe für den Artikel
 - Mehrere Begriffe mit Komma separieren  
-[!badge variant="secondary" icon="note" text="Begriff1,Bergriff2,Begriff3,..."]
+[!badge variant="secondary" icon="note" text="Begriff1,Begriff2,Begriff3,..."]
 ---
 ## Artikelbilder und Dokumente
 ||| Feldname
@@ -282,23 +282,89 @@ Die angegebenen Dateinamen aus der Artikeltabelle müssen 1:1 mit den übermitte
 Groß/Kleinschreibung beachten. `Dateiname.jpg` ist nicht gleich `dateiname.JPG`
 !!!
 ---
+## Produktattribute
+||| Feldname
+[!badge 'beliebig']
+||| Format
+Text
+|||
+- Hiermit können weitere Artikeleigenschaften definiert werden, die in der Artikeldetailansicht angezeigt werden
+- Mehrere Eigenschaften mittels Feld/Spaltenwiederholung darstellen, wobei der ==Spaltenname== die ==Bezeichnung== und der ==Feldinhalt== den ==Wert== darstellt
 
-Lieferstatus
-Lieferzeit
-Lagerstatus
-Lagerstand
-Optionale Sonderpreise Start
-Sonderpreis1
-Sonderpreis1 von
-Sonderpreis1 bis
-…Wiederholungen möglich
-Optionale Bilder und Dokumente Start
-Bild 1
-Bild 2
-Bild 3
-…Wiederholungen möglich
-Datei 1
-…Wiederholungen möglich
-Optionale Attribute Start
-Attribut1 Name
+[!badge variant="secondary" icon="note" text="Material"]   | [!badge variant="secondary" icon="note" text="Durchmesser"] | [!badge variant="secondary" icon="note" text="Länge"] | ... {class="compact"}
+---    | ---  | --- | ---
+[!badge variant="secondary" icon="note" text="Stahl"]   | [!badge variant="secondary" icon="note" text="8 mm"] | [!badge variant="secondary" icon="note" text="130 cm"] | ...
 
+- Alternativ können die Eigenschaften auch als Textkette in einem einzelnen Feld dargestellt werden.  
+  Das vorherige Beispiel könnte dann so aussehen:  
+`Material=Stahl,Durchmesser=8mm,Länge=130cm`
+---
+## Lieferstatus
+||| Feldname
+[!badge deliveryStatus]
+||| Format
+Text
+|||
+- Gibt die Verfügbarkeit des Artikels an  
+
+!!!warning 4 mögliche Werte
+||| `available`
+Artikel immer verfügbar
+|||`not_available`
+Artikel derzeit nicht erhältlich
+|||`on_request`
+Artikel muss angefragt werden
+|||`tracked`
+Artikel hat eine bestimmte Lieferzeit
+|||
+!!!
+---
+## Lieferzeit
+||| Feldname
+[!badge deliveryTime]
+||| Format
+Ganzzahl
+|||
+- Pflichtfeld, wenn der Lieferstatus `tracked` verwendet wird
+- Gibt die Lieferzeit des Artikels in Tagen an  
+---
+## Lagerstatus
+||| Feldname
+[!badge stockStatus]
+||| Format
+Text
+|||
+- Gibt den Lagerstatus des Artikels an  
+
+!!!warning 3 mögliche Werte
+||| `in_stock`
+Artikel immer lagernd
+|||`sold_out`
+Artikel derzeit nicht am Lager
+|||`tracked`
+Begrenzte Artikelzahl verfügbar
+|||
+!!!
+---
+## Lagerstand
+||| Feldname
+[!badge deliveryTime]
+||| Format
+Ganzzahl
+|||
+- Pflichtfeld, wenn der Lagerstatus `tracked` verwendet wird
+- Anzahl Lagerstand des Artikels  
+!!!
+Hier sollten regelmäßige Aktualisierungen übermittelt werden.
+!!!
+---
+## Sonderpreise (optional)
+!!!
+Wird in der Praxis meist mit eigenen Sonderpreislisten erledigt, kann aber auch direkt im Gesamtkatalog übermittelt werden
+!!!
+- :information_source: Aktuell sind keine Staffel-Sonderpreise möglich  
+- Am Ende einer Artikelzeile folgende Spalten anängen:  
+
+[!badge special_price]   | [!badge start_date] | [!badge end_date] {class="compact"}
+---    | ---  | --- 
+`preis` | `Datum von` | `Datum bis`
