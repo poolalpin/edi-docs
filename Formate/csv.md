@@ -275,6 +275,12 @@ files1   | files2 | files3 | ... {class="compact"}
 ---    | ---  | --- | ---
 [!badge variant="secondary" icon="note" text="http(s)://example.com/bilder/artikelbild1.jpg"] | [!badge variant="secondary" icon="note" text="http(s)://example.com/bilder/artikelbild2.jpg"] | [!badge variant="secondary" icon="note" text="http(s)://example.com/bilder/datenblatt1.pdf"] | ...
 
+!!!danger Wenn ihre Produktbilder nicht online verfügbar sind?
+In diesem Fall benötigen wir sämtliche Bilder, um diese vor der Produkteinspielung zu importieren.  
+[!badge variant="warning" icon=":zap:" iconAlign="left" text="Wichtig"] 
+Die angegebenen Dateinamen aus der Artikeltabelle müssen 1:1 mit den übermittelten Dateien übereinstimmen!  
+Groß/Kleinschreibung beachten. `Dateiname.jpg` ist nicht gleich `dateiname.JPG`
+!!!
 ---
 
 Lieferstatus
