@@ -20,7 +20,7 @@ Artikelnummern müssen **eindeutig** sein. Wird meist über eine Erweiterung hin
 [!badge variant="secondary" icon="note" text="123456-001"]
 !!!
 ---
-## en-Artikelcode
+## Varianten-Artikelcode
 ||| Feldname
 [!badge groupId]
 ||| Format
