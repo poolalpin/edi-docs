@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.0.3.742564988115">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.0.3.742569897171">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.0.3">
@@ -30,11 +30,11 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.0.3.742564988115" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=3.0.3.742569897171" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=3.0.3.742564988115" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=3.0.3.742569897171" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=3.0.3" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=3.0.3.742564988115" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=3.0.3.742569897171" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -508,20 +508,26 @@ Inhaltsmenge: &quot;6&quot;</p>
         <span>Preisbezugsmenge</span>
     </h2>
 </doc-anchor-target>
-<div class="mb-6 overflow-hidden border rounded-md docs-columns dark:border-dark-650" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
+<div class="mb-6 overflow-hidden border rounded-md docs-columns dark:border-dark-650" style="grid-template-columns: repeat(3, minmax(0, 1fr));">
     <div class="flex items-center px-5 py-3 font-medium leading-snug text-gray-900 border-b border-gray-200 dark:border-dark-650 dark:text-white border-r">
         <span>Feldname</span>
     </div>
-    <div class="flex items-center px-5 py-3 font-medium leading-snug text-gray-900 border-b border-gray-200 dark:border-dark-650 dark:text-white">
+    <div class="flex items-center px-5 py-3 font-medium leading-snug text-gray-900 border-b border-gray-200 dark:border-dark-650 dark:text-white border-r">
         <span>Format</span>
+    </div>
+    <div class="flex items-center px-5 py-3 font-medium leading-snug text-gray-900 border-b border-gray-200 dark:border-dark-650 dark:text-white">
+        <span>Standardwert</span>
     </div>
     <div class="px-5 py-3 docs-columns-content border-r border-gray-200 dark:border-dark-650">
 <p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
     <span>priceQuantity</span>
 </span></p>
     </div>
-    <div class="px-5 py-3 docs-columns-content">
+    <div class="px-5 py-3 docs-columns-content border-r border-gray-200 dark:border-dark-650">
 <p>Ganz- oder Dezimalzahl</p>
+    </div>
+    <div class="px-5 py-3 docs-columns-content">
+<p>1</p>
     </div>
 </div>
 <ul>
@@ -553,9 +559,174 @@ Inhaltsmenge: &quot;6&quot;</p>
         <span>Mindestbestellmenge</span>
     </h2>
 </doc-anchor-target>
-<p>Mengenstaffel der Mind.Best.Mge
-Maximale Bestellmenge
-Empfohlene Bestellmenge</p>
+<div class="mb-6 overflow-hidden border rounded-md docs-columns dark:border-dark-650" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
+    <div class="flex items-center px-5 py-3 font-medium leading-snug text-gray-900 border-b border-gray-200 dark:border-dark-650 dark:text-white border-r">
+        <span>Feldname</span>
+    </div>
+    <div class="flex items-center px-5 py-3 font-medium leading-snug text-gray-900 border-b border-gray-200 dark:border-dark-650 dark:text-white">
+        <span>Format</span>
+    </div>
+    <div class="px-5 py-3 docs-columns-content border-r border-gray-200 dark:border-dark-650">
+<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+    <span>minimumOrderQuantity</span>
+</span></p>
+    </div>
+    <div class="px-5 py-3 docs-columns-content">
+<p>Ganz- oder Dezimalzahl</p>
+    </div>
+</div>
+<ul>
+<li>Generelle Mindesbestellmenge für das Produkt, bezogen auf die <doc-anchor-trigger to="#bestelleinheit">Bestelleinheit</doc-anchor-trigger></li>
+</ul>
+<hr />
+<doc-anchor-target id="bestellintervall-menge">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#bestellintervall-menge">#</doc-anchor-trigger>
+        <span>Bestellintervall-Menge</span>
+    </h2>
+</doc-anchor-target>
+<div class="mb-6 overflow-hidden border rounded-md docs-columns dark:border-dark-650" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
+    <div class="flex items-center px-5 py-3 font-medium leading-snug text-gray-900 border-b border-gray-200 dark:border-dark-650 dark:text-white border-r">
+        <span>Feldname</span>
+    </div>
+    <div class="flex items-center px-5 py-3 font-medium leading-snug text-gray-900 border-b border-gray-200 dark:border-dark-650 dark:text-white">
+        <span>Format</span>
+    </div>
+    <div class="px-5 py-3 docs-columns-content border-r border-gray-200 dark:border-dark-650">
+<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+    <span>quantityInterval</span>
+</span></p>
+    </div>
+    <div class="px-5 py-3 docs-columns-content">
+<p>Ganz- oder Dezimalzahl</p>
+    </div>
+</div>
+<ul>
+<li>Angabe der Staffelung, in der das Produkt bestellt werden kann</li>
+<li>Die Zählung für diese Staffelung beginnt stets mit der angegebenen
+Mindestbestellmenge.</li>
+<li>Die Einheit für die Mengenstaffel ist die Bestelleinheit.</li>
+</ul>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>Beispiel: 1 (d.h. 5, 6, 7, ... Kisten)<br />
+Beispiel: 2 (d.h. 4, 6, 8, ... Kisten)</p>
+        </div>
+    </div>
+</div>
+<hr />
+<doc-anchor-target id="maximale-bestellmenge">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#maximale-bestellmenge">#</doc-anchor-trigger>
+        <span>Maximale Bestellmenge</span>
+    </h2>
+</doc-anchor-target>
+<div class="mb-6 overflow-hidden border rounded-md docs-columns dark:border-dark-650" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
+    <div class="flex items-center px-5 py-3 font-medium leading-snug text-gray-900 border-b border-gray-200 dark:border-dark-650 dark:text-white border-r">
+        <span>Feldname</span>
+    </div>
+    <div class="flex items-center px-5 py-3 font-medium leading-snug text-gray-900 border-b border-gray-200 dark:border-dark-650 dark:text-white">
+        <span>Format</span>
+    </div>
+    <div class="px-5 py-3 docs-columns-content border-r border-gray-200 dark:border-dark-650">
+<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+    <span>maximumOrderQuantity</span>
+</span></p>
+    </div>
+    <div class="px-5 py-3 docs-columns-content">
+<p>Ganz- oder Dezimalzahl</p>
+    </div>
+</div>
+<hr />
+<doc-anchor-target id="empfohlene-bestellmenge">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#empfohlene-bestellmenge">#</doc-anchor-trigger>
+        <span>Empfohlene Bestellmenge</span>
+    </h2>
+</doc-anchor-target>
+<div class="mb-6 overflow-hidden border rounded-md docs-columns dark:border-dark-650" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
+    <div class="flex items-center px-5 py-3 font-medium leading-snug text-gray-900 border-b border-gray-200 dark:border-dark-650 dark:text-white border-r">
+        <span>Feldname</span>
+    </div>
+    <div class="flex items-center px-5 py-3 font-medium leading-snug text-gray-900 border-b border-gray-200 dark:border-dark-650 dark:text-white">
+        <span>Format</span>
+    </div>
+    <div class="px-5 py-3 docs-columns-content border-r border-gray-200 dark:border-dark-650">
+<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+    <span>recommendedOrderQuantity</span>
+</span></p>
+    </div>
+    <div class="px-5 py-3 docs-columns-content">
+<p>Ganz- oder Dezimalzahl</p>
+    </div>
+</div>
+<ul>
+<li>Empfohlene Bestellmenge wird im Artikeldetail angezeigt, ist aber unverbindlich</li>
+</ul>
+<hr />
+<doc-anchor-target id="preisreferenzmenge">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#preisreferenzmenge">#</doc-anchor-trigger>
+        <span>Preisreferenzmenge</span>
+    </h2>
+</doc-anchor-target>
+<div class="mb-6 overflow-hidden border rounded-md docs-columns dark:border-dark-650" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
+    <div class="flex items-center px-5 py-3 font-medium leading-snug text-gray-900 border-b border-gray-200 dark:border-dark-650 dark:text-white border-r">
+        <span>Feldname</span>
+    </div>
+    <div class="flex items-center px-5 py-3 font-medium leading-snug text-gray-900 border-b border-gray-200 dark:border-dark-650 dark:text-white">
+        <span>Format</span>
+    </div>
+    <div class="px-5 py-3 docs-columns-content border-r border-gray-200 dark:border-dark-650">
+<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+    <span>priceReferenceQuantity</span>
+</span></p>
+    </div>
+    <div class="px-5 py-3 docs-columns-content">
+<p>Ganz- oder Dezimalzahl</p>
+    </div>
+</div>
+<ul>
+<li>Kann verwendet werden, um den Preis in einer leichter vergleichbaren Einheit darzustellen</li>
+</ul>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Beispiel</h5>
+<p>Preis per Flasche à 650 Milliliter = 33,00 €<br />
+<span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+    <span>price</span>
+</span> 33 / <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+    <span>contentQuantity</span>
+</span> 650 = 0,0508 € per Milliliter<br />
+Preis per Milliliter 0,0508 * <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+    <span>priceReferenceQuantity</span>
+</span> 1000 = 50,7692 € per 1000 Milliliter</p>
+        </div>
+    </div>
+</div>
+<hr />
 <doc-anchor-target id="währung">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#währung">#</doc-anchor-trigger>
