@@ -8,7 +8,7 @@ Kennzeichnung | Beschreibung {class="compact"}
 :heavy_check_mark: | Empfohlenes Feld
 [!badge variant="secondary" icon="note" text="Beispieltext"] | Beispiel für den Feldinhalt
 !!!
-
+---
 ## Artikelnummer
 ||| Feldname
 [!badge number] :exclamation:
@@ -42,6 +42,7 @@ Text
 !!!warning
 Darf nur 12 oder 13 Stellen haben
 !!!
+---
 ## Artikelname
 ||| Feldname
 [!badge name] :exclamation:
@@ -270,7 +271,7 @@ Links zu den Dateien werden bevorzugt, diese werden dann automatisch in den Webs
 - Die erste Bilddatei wird zum Vorschaubild
 - Mehrere Dateien mittels Feld/Spaltenwiederholung darstellen 
 
-files1   | files2 | filess | ... {class="compact"}
+files1   | files2 | files3 | ... {class="compact"}
 ---    | ---  | --- | ---
 [!badge variant="secondary" icon="note" text="http(s)://example.com/bilder/artikelbild1.jpg"] | [!badge variant="secondary" icon="note" text="http(s)://example.com/bilder/artikelbild2.jpg"] | [!badge variant="secondary" icon="note" text="http(s)://example.com/bilder/datenblatt1.pdf"] | ...
 
