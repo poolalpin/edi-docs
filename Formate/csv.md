@@ -20,6 +20,28 @@ Artikelnummern müssen **eindeutig** sein. Wird meist über eine Erweiterung hin
 [!badge variant="secondary" icon="note" text="123456-001"]
 !!!
 ---
+## Varianten-Artikelcode
+||| Feldname
+[!badge groupId]
+||| Format
+Text
+|||
+- **Frei wählbare Zeichenfolge**, die dazu dient, Artikel mit Varianten im Webshop zu gruppieren
+- Alle Artikel mit ==identischem Code== sind im Shop im Artikeldetail über ein Auswahlfeld selektierbar
+==- Beispieldarstellung im Shop :icon-image:
+![Variantenanzeige im Shop](../static/variantenauswahl.png)
+===
+---
+## GTIN / EAN
+||| Feldname
+[!badge globalTradeItemNumber] :heavy_check_mark:
+||| Format
+Text 
+|||
+- EAN-Code des Artikels
+!!!warning
+Darf nur 12 oder 13 Stellen haben
+!!!
 ## Artikelname
 ||| Feldname
 [!badge name] :exclamation:
@@ -110,7 +132,7 @@ Ganz- oder Dezimalzahl
 ||| Format
 Ganz- oder Dezimalzahl
 |||
-- Generelle Mindesbestellmenge für das Produkt, bezogen auf die [Bestelleinheit](#bestelleinheit)
+- Verpflichtende Mindesbestellmenge für das Produkt, bezogen auf die [Bestelleinheit](#bestelleinheit)
 ---
 ## Bestellintervall-Menge
 ||| Feldname
@@ -140,7 +162,7 @@ Ganz- oder Dezimalzahl
 ||| Format
 Ganz- oder Dezimalzahl
 |||
-- Empfohlene Bestellmenge wird im Artikeldetail angezeigt, ist aber unverbindlich
+- Unverbindlich empfohlene Bestellmenge; wird im Artikeldetail angezeigt
 ---
 ## Preisreferenzmenge
 ||| Feldname
@@ -174,19 +196,68 @@ Es wird der **POOL-ALPIN Netto-Einkaufspreis** des Artikels erwartet.
 Zu berechnende prozentuale Abschläge anhand von Rabattlisten sind nicht möglich.  
 Im Zweifelsfall bitte mit uns Kontakt aufnehmen.
 !!!
-### Staffelpreise
+### Staffelpreise (optional)
 Wenn Staffelpreise zur Anwendung kommen, werden diese über entsprechende Feldwiederholungen/Spalten realisiert:  
 
 Preis1   | Ab Menge1 | Preis2 | Ab Menge2 | Preis3 | Ab Menge3 | ... {class="compact"}
 ---    | ---  | --- | --- | --- | --- | ---
-[!badge price1] :exclamation: | [!badge quantity1] :exclamation: | [!badge price2] :exclamation: | [!badge quantity2] :exclamation: | [!badge price2] :exclamation: | [!badge quantity2] :exclamation: 
-Warengruppe
-eClass
-Suchbegriffe
-GTIN
-Hersteller
-Marke
-Varianten-Artikelcode
+[!badge price1] :exclamation: | [!badge quantity1] :exclamation: | [!badge price2] :exclamation: | [!badge quantity2] :exclamation: | [!badge price2] :exclamation: | [!badge quantity2] :exclamation:
+
+---
+## Hersteller
+||| Feldname
+[!badge manufacturer]
+||| Format
+Text
+|||
+- Hersteller des Artikels  
+[!badge variant="secondary" icon="note" text="Ferrero"]
+---
+## Marke
+||| Feldname
+[!badge brand]
+||| Format
+Text
+|||
+- Markenname des Artikels  
+[!badge variant="secondary" icon="note" text="Nutella"]
+---
+## Warengruppen(n)
+||| Feldname
+[!badge categories]
+||| Format
+Text
+|||
+- Die zugehörige(n) Warengruppe(n) des Artikels
+- Mehrere Warengruppen mittels Feld/Spaltenwiederholung darstellen  
+
+categories1   | categories2 | categories3 | ... {class="compact"}
+---    | ---  | --- | ---
+[!badge variant="secondary" icon="note" text="Brotaufstriche"] | [!badge variant="secondary" icon="note" text="Süßwaren"] | [!badge variant="secondary" icon="note" text="Lebensmittel"] | ...
+
+---
+## eClass
+||| Feldname
+[!badge eclass] :heavy_check_mark:
+||| Format
+Ganzzahl
+|||
+- Kategorie des Artikels nach [!badge variant="info "target="blank" text="eClass"](https://eclass.eu/eclass-standard/einfuehrung) Standard  
+- Ermöglicht die automatische Kategorie-Zuweisung im Webshop  
+[!badge variant="secondary" icon="note" text="27142217"] [!badge variant="secondary" icon="note" text="27-14-22-17"]
+---
+## Suchbegriffe
+||| Feldname
+[!badge searchTerms]
+||| Format
+Text
+|||
+- Ein oder mehrere Suchbegriffe für den Artikel
+- Mehrere Begriffe mit Komma separieren  
+[!badge variant="secondary" icon="note" text="Begriff1,Bergriff2,Begriff3,..."]
+---
+## Artikelbilder und Dokumente
+
 Lieferstatus
 Lieferzeit
 Lagerstatus
