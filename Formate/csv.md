@@ -13,6 +13,10 @@ This is a basic page, with only a title and some text content.
 ||| Format
 Text
 |||
+!!!warning Artikel mit Varianten und/oder Größen
+Artikelnummern müssen **eindeutig** sein. Wird meist über eine Erweiterung hinter der Artikelnummer gelöst: *Stammtartikelnummer + Erweiterung*  
+[!badge variant="secondary" icon="note" text="123456-001"]
+!!!
 ### Artikelname
 ||| Feldname
 [!badge name] :exclamation:
