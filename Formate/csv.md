@@ -1,4 +1,7 @@
-
+---
+label: CSV
+date: 2023-07-13
+---
 
 # Feldbeschreibung
 !!!info Verwendete Symbole und Kennzeichnungen
