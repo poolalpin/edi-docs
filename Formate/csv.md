@@ -95,6 +95,8 @@ Wenn sich die Inhaltseinheit von der Bestelleinheit unterscheidet, **muss** die 
 [!badge priceQuantity]
 ||| Format
 Ganz- oder Dezimalzahl
+|||Standardwert
+1
 |||
 - Wird dieses Element nicht angegeben, so bezieht sich der Preis auf die angegebene Bestelleinheit.
 - Durch Angabe eines Vielfaches oder eines Bruchteils der Bestelleinheit kann davon abgewichen werden.
@@ -103,9 +105,56 @@ Ganz- oder Dezimalzahl
 !!!
 ---
 ## Mindestbestellmenge
-Mengenstaffel der Mind.Best.Mge
-Maximale Bestellmenge
-Empfohlene Bestellmenge
+||| Feldname
+[!badge minimumOrderQuantity]
+||| Format
+Ganz- oder Dezimalzahl
+|||
+- Generelle Mindesbestellmenge für das Produkt, bezogen auf die [Bestelleinheit](#bestelleinheit)
+---
+## Bestellintervall-Menge
+||| Feldname
+[!badge quantityInterval]
+||| Format
+Ganz- oder Dezimalzahl
+|||
+- Angabe der Staffelung, in der das Produkt bestellt werden kann
+- Die Zählung für diese Staffelung beginnt stets mit der angegebenen
+Mindestbestellmenge.
+- Die Einheit für die Mengenstaffel ist die Bestelleinheit.
+!!!
+Beispiel: 1 (d.h. 5, 6, 7, ... Kisten)  
+Beispiel: 2 (d.h. 4, 6, 8, ... Kisten)
+!!!
+---
+## Maximale Bestellmenge
+||| Feldname
+[!badge maximumOrderQuantity]
+||| Format
+Ganz- oder Dezimalzahl
+|||
+---
+## Empfohlene Bestellmenge
+||| Feldname
+[!badge recommendedOrderQuantity]
+||| Format
+Ganz- oder Dezimalzahl
+|||
+- Empfohlene Bestellmenge wird im Artikeldetail angezeigt, ist aber unverbindlich
+---
+## Preisreferenzmenge
+||| Feldname
+[!badge priceReferenceQuantity]
+||| Format
+Ganz- oder Dezimalzahl
+|||
+- Kann verwendet werden, um den Preis in einer leichter vergleichbaren Einheit darzustellen
+!!!Beispiel
+Preis per Flasche à 650 Milliliter = 33,00 €  
+[!badge price] 33 / [!badge contentQuantity] 650 = 0,0508 € per Milliliter  
+Preis per Milliliter 0,0508 * [!badge priceReferenceQuantity] 1000 = 50,7692 € per 1000 Milliliter
+!!!
+---
 ## Währung
 ||| Feldname
 [!badge currency] :exclamation:
