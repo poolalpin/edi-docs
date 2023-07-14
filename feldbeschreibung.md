@@ -1,15 +1,19 @@
 ---
-label: CSV
+label: Feldbeschreibung
+icon: list-unordered
 date: 2023-07-13
 ---
 
 # Feldbeschreibung
-!!!info Verwendete Symbole und Kennzeichnungen
+!!! Verwendete Symbole und Kennzeichnungen
 Kennzeichnung | Beschreibung {class="compact"}
 --- | ---
 :exclamation: | Pflichtfeld
 :heavy_check_mark: | Empfohlenes Feld
 [!badge variant="secondary" icon="note" text="Beispieltext"] | Beispiel für den Feldinhalt
+!!!
+!!!dark
+Standardwerte werden bei fehlenden Daten in einer Importdatei automatisch gesetzt.
 !!!
 ---
 ## Artikelnummer
@@ -19,7 +23,8 @@ Kennzeichnung | Beschreibung {class="compact"}
 Text
 |||
 !!!warning Artikel mit Varianten und/oder Größen
-Artikelnummern müssen **eindeutig** sein. Wird meist über eine Erweiterung hinter der Artikelnummer gelöst: *Stammtartikelnummer + Erweiterung*  
+Artikelnummern müssen **eindeutig** sein. Wird meist über eine Erweiterung hinter der Artikelnummer gelöst:  
+*Stammtartikelnummer + Erweiterung*   
 [!badge variant="secondary" icon="note" text="123456-001"]
 !!!
 ---
@@ -30,7 +35,8 @@ Artikelnummern müssen **eindeutig** sein. Wird meist über eine Erweiterung hin
 Text
 |||
 - **Frei wählbare Zeichenfolge**, die dazu dient, Artikel mit Varianten im Webshop zu gruppieren
-- Alle Artikel mit ==identischem Code== sind im Shop im Artikeldetail über ein Auswahlfeld selektierbar
+- Alle Artikel mit **identischem** Code sind im Shop im Artikeldetail über ein Auswahlfeld selektierbar  
+[!badge variant="secondary" icon="note" text="t-shirt-variante-0001"]
 ==- Beispieldarstellung im Shop :icon-image:
 ![Variantenanzeige im Shop](../static/variantenauswahl.png)
 ===
@@ -43,7 +49,7 @@ Text
 |||
 - EAN-Code des Artikels
 !!!warning
-Darf nur 12 oder 13 Stellen haben
+Muss entweder 12 oder 13 Stellen haben
 !!!
 ---
 ## Artikelname
@@ -81,10 +87,10 @@ max. 255 Zeichen
 [!badge orderUnit] :heavy_check_mark:
 ||| Format
 Text
-||| Standardeinheit
+||| Standardwert
 Stück
 |||
-- Einheit, in der das Produkte bestellt werden kann; es können nur Vielfache dieser
+- Einheit, in der das Produkt bestellt werden kann; es können nur Vielfache dieser
 Einheit bestellt werden.
 - Auf diese Einheit (oder auf Teile oder auf Vielfache davon) bezieht sich stets auch der
 Preis.
@@ -135,6 +141,8 @@ Ganz- oder Dezimalzahl
 [!badge minimumOrderQuantity]
 ||| Format
 Ganz- oder Dezimalzahl
+||| Standardwert
+1
 |||
 - Verpflichtende Mindestbestellmenge für das Produkt, bezogen auf die [Bestelleinheit](#bestelleinheit)
 ---
@@ -143,6 +151,8 @@ Ganz- oder Dezimalzahl
 [!badge quantityInterval]
 ||| Format
 Ganz- oder Dezimalzahl
+||| Standardwert
+1
 |||
 - Angabe der Staffelung, in der das Produkt bestellt werden kann
 - Die Zählung für diese Staffelung beginnt stets mit der angegebenen
@@ -173,11 +183,13 @@ Ganz- oder Dezimalzahl
 [!badge priceReferenceQuantity]
 ||| Format
 Ganz- oder Dezimalzahl
+||| Standardwert
+1
 |||
 - Kann verwendet werden, um den Preis in einer leichter vergleichbaren Einheit darzustellen
 !!!Beispiel
 Preis per Flasche à 650 Milliliter = 33,00 €  
-[!badge price] 33 / [!badge contentQuantity] 650 = 0,0508 € per Milliliter  
+[!badge price] 33,00 / [!badge contentQuantity] 650 = 0,0508 € per Milliliter  
 Preis per Milliliter 0,0508 * [!badge priceReferenceQuantity] 1000 = 50,7692 € per 1000 Milliliter
 !!!
 ---
@@ -203,9 +215,9 @@ Im Zweifelsfall bitte mit uns Kontakt aufnehmen.
 ### Staffelpreise (optional)
 Wenn Staffelpreise zur Anwendung kommen, werden diese über entsprechende Feldwiederholungen/Spalten realisiert:  
 
-Preis1   | Ab Menge1 | Preis2 | Ab Menge2 | Preis3 | Ab Menge3 | ... {class="compact"}
+Preis1   | Ab Menge1 | Preis2 | Ab Menge2 | Preis3 | Ab Menge3 | max.5 {class="compact"}
 ---    | ---  | --- | --- | --- | --- | ---
-[!badge price1] :exclamation: | [!badge quantity1] :exclamation: | [!badge price2] :exclamation: | [!badge quantity2] :exclamation: | [!badge price2] :exclamation: | [!badge quantity2] :exclamation:
+[!badge price1] :exclamation: | [!badge quantity1] :exclamation: | [!badge price2] :exclamation: | [!badge quantity2] :exclamation: | [!badge price2] :exclamation: | [!badge quantity2] :exclamation: | ...
 
 ---
 ## Hersteller
@@ -235,7 +247,7 @@ Text
 - Die zugehörige(n) Warengruppe(n) des Artikels
 - Mehrere Warengruppen mittels Feld/Spaltenwiederholung darstellen  
 
-categories1   | categories2 | categories3 | ... {class="compact"}
+categories1   | categories2 | categories3 | max.5 {class="compact"}
 ---    | ---  | --- | ---
 [!badge variant="secondary" icon="note" text="Brotaufstriche"] | [!badge variant="secondary" icon="note" text="Süßwaren"] | [!badge variant="secondary" icon="note" text="Lebensmittel"] | ...
 
@@ -257,7 +269,7 @@ Text
 Text
 |||
 - Ein oder mehrere Suchbegriffe für den Artikel
-- Mehrere Begriffe mit Komma separieren  
+- Mehrere Begriffe mit Komma, ohne Leerzeichen separieren  
 [!badge variant="secondary" icon="note" text="Begriff1,Begriff2,Begriff3,..."]
 ---
 ## Artikelbilder und Dokumente
@@ -270,11 +282,11 @@ Text
 Links zu den Dateien werden bevorzugt, diese werden dann automatisch in den Webshop geladen!  
 [!badge variant="secondary" icon="note" text="http(s)://example.com/bilder/artikelbild1.jpg"]
 !!!
-- Artikelbilder (.jpg|.png|.webp) und Datenblätter (.pdf) sind möglich
+- Artikelbilder :frame_with_picture: (.jpg|.png|.webp) und Datenblätter :page_facing_up: (.pdf) sind möglich
 - Die erste Bilddatei wird zum Vorschaubild
 - Mehrere Dateien mittels Feld/Spaltenwiederholung darstellen 
 
-files1   | files2 | files3 | ... {class="compact"}
+files1   | files2 | files3 | max.5 {class="compact"}
 ---    | ---  | --- | ---
 [!badge variant="secondary" icon="note" text="http(s)://example.com/bilder/artikelbild1.jpg"] | [!badge variant="secondary" icon="note" text="http(s)://example.com/bilder/artikelbild2.jpg"] | [!badge variant="secondary" icon="note" text="http(s)://example.com/bilder/datenblatt1.pdf"] | ...
 
@@ -294,7 +306,7 @@ Text
 - Hiermit können weitere Artikeleigenschaften definiert werden, die in der Artikeldetailansicht angezeigt werden
 - Mehrere Eigenschaften mittels Feld/Spaltenwiederholung darstellen, wobei der ==Spaltenname== die ==Bezeichnung== und der ==Feldinhalt== den ==Wert== darstellt
 
-[!badge variant="secondary" icon="note" text="Material"]   | [!badge variant="secondary" icon="note" text="Durchmesser"] | [!badge variant="secondary" icon="note" text="Länge"] | ... {class="compact"}
+[!badge variant="secondary" icon="note" text="Material"]   | [!badge variant="secondary" icon="note" text="Durchmesser"] | [!badge variant="secondary" icon="note" text="Länge"] | max.5 {class="compact"}
 ---    | ---  | --- | ---
 [!badge variant="secondary" icon="note" text="Stahl"]   | [!badge variant="secondary" icon="note" text="8 mm"] | [!badge variant="secondary" icon="note" text="130 cm"] | ...
 
@@ -307,6 +319,8 @@ Text
 [!badge deliveryStatus]
 ||| Format
 Text
+||| Standardwert
+`available`
 |||
 - Gibt die Verfügbarkeit des Artikels an  
 
@@ -336,11 +350,13 @@ Ganzzahl
 [!badge stockStatus]
 ||| Format
 Text
+||| Standardwert
+`in_stock`
 |||
 - Gibt den Lagerstatus des Artikels an  
 
 !!!warning 3 mögliche Werte
-||| `in_stock`
+|||`in_stock`
 Artikel immer lagernd
 |||`sold_out`
 Artikel derzeit nicht am Lager
@@ -351,7 +367,7 @@ Begrenzte Artikelzahl verfügbar
 ---
 ## Lagerstand
 ||| Feldname
-[!badge deliveryTime]
+[!badge inventory]
 ||| Format
 Ganzzahl
 |||
@@ -368,6 +384,6 @@ Wird in der Praxis meist mit eigenen Sonderpreislisten erledigt, kann aber auch 
 - :information_source: Aktuell sind keine Staffel-Sonderpreise möglich  
 - Am Ende einer Artikelzeile folgende Spalten anängen:  
 
-[!badge special_price]   | [!badge start_date] | [!badge end_date] {class="compact"}
+[!badge specialPrice]   | [!badge startDate] | [!badge endDate] {class="compact"}
 ---    | ---  | --- 
 `preis` | `Datum von` | `Datum bis`
