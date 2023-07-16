@@ -2,6 +2,10 @@ input: .
 output: .retype
 locale: de
 url: docu.pool-alpin.work
+integrations:
+  plausible:
+    domain: docu.pool-alpin.work
+    host: plausible.pool-alpin.work
 branding:
   #title: POOL-ALPIN
   logo: static/pa_logo.png
