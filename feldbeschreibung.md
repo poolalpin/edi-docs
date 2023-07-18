@@ -47,10 +47,7 @@ Text
 ||| Format
 Text 
 |||
-- EAN-Code des Artikels
-!!!warning
-Muss entweder 12 oder 13 Stellen haben
-!!!
+- EAN-Code des Artikels  
 ---
 ## Artikelname
 ||| Feldname
