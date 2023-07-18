@@ -1,7 +1,7 @@
 ---
 label: Feldbeschreibung
 icon: list-unordered
-date: 2023-07-13
+date: 2023-07-18
 ---
 
 # Feldbeschreibung
@@ -47,7 +47,10 @@ Text
 ||| Format
 Text 
 |||
-- EAN-Code des Artikels  
+- EAN-Code des Artikels 
+!!!success
+Artikel mit identer GTIN werden im Artikeldetail auch im Abschnitt "Identischer Artikel bei anderen Lieferanten" angezeigt.
+!!! 
 ---
 ## Artikelname
 ||| Feldname
