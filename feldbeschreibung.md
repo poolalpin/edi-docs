@@ -38,7 +38,8 @@ Text
 - Alle Artikel mit **identischem** Code sind im Shop im Artikeldetail über ein Auswahlfeld selektierbar  
 [!badge variant="secondary" icon="note" text="t-shirt-variante-0001"]
 !!!success Erlaubte Zeichen
-Alphanumerische Zeichen des englischen Alphabets: `a-z`, `A-Z`, `0-9`. Ergänzend können die Sonderzeichen Bindestrich `-`, Unterstrich `_` und Punkt `.` verwendet werden.
+Alphanumerische Zeichen des englischen Alphabets: `a-z`, `A-Z`, `0-9`.  
+Ergänzend können die Sonderzeichen Bindestrich `-`, Unterstrich `_` und Punkt `.` verwendet werden.
 !!!
 !!!danger Nicht erlaubte Zeichen
 `Leerzeichen` `,` `;` `\` `/` `:` `*` `?` `"` `'` `<` `>` `|`
