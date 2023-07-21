@@ -1,7 +1,7 @@
 ---
 label: Feldbeschreibung
 icon: list-unordered
-date: 2023-07-18
+date: 2023-07-21
 ---
 
 # Feldbeschreibung
@@ -37,6 +37,12 @@ Text
 - **Frei wählbare Zeichenfolge**, die dazu dient, Artikel mit Varianten im Webshop zu gruppieren
 - Alle Artikel mit **identischem** Code sind im Shop im Artikeldetail über ein Auswahlfeld selektierbar  
 [!badge variant="secondary" icon="note" text="t-shirt-variante-0001"]
+!!!success Erlaubte Zeichen
+Alphanumerische Zeichen des englischen Alphabets: `a-z`, `A-Z`, `0-9`. Ergänzend können die Sonderzeichen Bindestrich `-`, Unterstrich `_` und Punkt `.` verwendet werden.
+!!!
+!!!danger Nicht erlaubte Zeichen
+`Leerzeichen` `,` `;` `\` `/` `:` `*` `?` `"` `'` `<` `>` `|`
+!!!
 ==- Beispieldarstellung im Shop :icon-image:
 ![Variantenanzeige im Shop](../static/variantenauswahl.png)
 ===
