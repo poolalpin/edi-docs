@@ -108,7 +108,7 @@ Inhaltsmenge: **6**
 !!!
 ---
 ### Inhaltseinheit (optional)
-!!! warning
+!!! danger
 Darf nur verwendet werden, wenn sich die Inhaltseinheit von der [Bestelleinheit](#bestelleinheit) unterscheidet.  
 In diesem Fall werden Inhaltseinheit und Inhaltsmenge zu **Pflichtfeldern**
 !!!
@@ -120,7 +120,7 @@ Text
 - Einheit des Produktes innerhalb einer Bestelleinheit
 ---
 ### Inhaltsmenge (optional)
-!!! warning
+!!! danger
 Wird eine [Inhaltseinheit](#inhaltseinheit-optional) verwendet, **muss** auch die Inhaltsmenge angegeben werden.
 !!!
 ||| Feldname
