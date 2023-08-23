@@ -1,10 +1,10 @@
 input: .
 output: .retype
 locale: de
-url: docu.pool-alpin.work
+url: docs.pool-alpin.work
 integrations:
   plausible:
-    domain: docu.pool-alpin.work
+    domain: docs.pool-alpin.work
     host: plausible.pool-alpin.work
 branding:
   #title: POOL-ALPIN
