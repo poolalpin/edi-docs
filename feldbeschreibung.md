@@ -107,18 +107,18 @@ Bestelleinheit: **Kiste**, Inhaltseinheit des Artikels: **Flasche**
 Inhaltsmenge: **6**
 !!!
 ---
-## Inhaltseinheit
+### Inhaltseinheit
+!!! warning
+Wenn sich die Inhaltseinheit von der Bestelleinheit unterscheidet, wird diese zum **Pflichtfeld**
+!!!
 ||| Feldname
 [!badge contentUnit]
 ||| Format
 Text
 |||
 - Einheit des Produktes innerhalb einer Bestelleinheit
-!!! warning
-Wenn sich die Inhaltseinheit von der Bestelleinheit unterscheidet, wird diese zum **Pflichtfeld**
-!!!
 ---
-## Inhaltsmenge
+### Inhaltsmenge
 ||| Feldname
 [!badge contentQuantity]
 ||| Format
