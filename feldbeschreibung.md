@@ -109,7 +109,7 @@ Inhaltsmenge: **6**
 ---
 ### Inhaltseinheit (optional)
 !!! warning
-Darf nur verwendet werden, wenn sich die Inhaltseinheit von der Bestelleinheit unterscheidet.  
+Darf nur verwendet werden, wenn sich die Inhaltseinheit von der [Bestelleinheit](#bestelleinheit) unterscheidet.  
 In diesem Fall werden Inhaltseinheit und Inhaltsmenge zu **Pflichtfeldern**
 !!!
 ||| Feldname
@@ -120,15 +120,15 @@ Text
 - Einheit des Produktes innerhalb einer Bestelleinheit
 ---
 ### Inhaltsmenge (optional)
+!!! warning
+Wird eine [Inhaltseinheit](#inhaltseinheit-optional) verwendet, **muss** auch die Inhaltsmenge angegeben werden.
+!!!
 ||| Feldname
 [!badge contentQuantity]
 ||| Format
 Ganz- oder Dezimalzahl
 |||
-- Anzahl der Inhaltseinheiten pro Bestelleinheit des Artikels
-!!! warning
-Wird eine Inhaltseinheit verwendet, **muss** auch die Inhaltsmenge angegeben werden.
-!!!
+- Anzahl der Inhaltseinheiten pro [Bestelleinheit](#bestelleinheit) des Artikels
 ---
 ## Preisbezugsmenge
 ||| Feldname
