@@ -91,7 +91,7 @@ max. 255 Zeichen
 ---
 ## Bestelleinheit
 ||| Feldname
-[!badge orderUnit] :heavy_check_mark:
+[!badge orderUnit] :exclamation:
 ||| Format
 Text
 ||| Standardwert
