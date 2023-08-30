@@ -1,7 +1,7 @@
 ---
 label: Feldbeschreibung
 icon: list-unordered
-date: 2023-08-23
+date: 2023-08-30
 ---
 
 # Feldbeschreibung
@@ -102,7 +102,7 @@ Einheit bestellt werden.
 - Auf diese Einheit (oder auf Teile oder auf Vielfache davon) bezieht sich stets auch der
 Preis.
 !!!Beispiel
-Kiste Mineralwasser mit 6 Flaschen  
+Kiste Mineralwasser mit 6 Flaschen:  
 Bestelleinheit: **Kiste**, Inhaltseinheit des Artikels: **Flasche**  
 Inhaltsmenge: **6**
 !!!
@@ -138,10 +138,10 @@ Ganz- oder Dezimalzahl
 |||Standardwert
 1
 |||
-- Wird dieses Element nicht angegeben, so bezieht sich der Preis auf die angegebene Bestelleinheit.
+- Wird dieses Element **nicht** angegeben, so bezieht sich der Preis auf 1 Einheit der angegebenen [Bestelleinheit](#bestelleinheit).
 - Durch Angabe eines Vielfaches oder eines Bruchteils der Bestelleinheit kann davon abgewichen werden.
 !!!Beispiel
-10 mit Bestelleinheit Karton, d.h. der Preis bezieht sich auf 10 Kartons.
+100 mit Bestelleinheit Stück, d.h. der Preis bezieht sich auf 100 Stück.
 !!!
 ---
 ## Mindestbestellmenge
@@ -245,6 +245,14 @@ Text
 |||
 - Markenname des Artikels  
 [!badge variant="secondary" icon="note" text="Nutella"]
+---
+## Nachhaltiger "Öko" Artikel
+||| Feldname
+[!badge isEcoProduct]
+||| Format
+boolean 
+|||
+- Kennzeichnet den Artikel im Shop mit einem Öko-Label, nach dem auch gefiltert werden kann.
 ---
 ## Warengruppen(n)
 ||| Feldname
@@ -384,6 +392,29 @@ Ganzzahl
 !!!
 Hier sollten regelmäßige Aktualisierungen übermittelt werden.
 !!!
+---
+## Verpackungseinheiten
+||| Feldnamen
+[!badge unit] [!badge minimumQuantity] [!badge maximumQuantity]
+||| Format
+Text
+|||
+- Wenn angegeben, scheinen diese im Artikeldetail auf und legen die entsprechende Menge [Bestelleinheiten](#bestelleinheit) in den Warenkorb.
+!!!Beispiel
+Kiste Mineralwasser mit 6 Flaschen:  
+Bestelleinheit: **Kiste**, Inhaltseinheit des Artikels: **Flasche**  
+Inhaltsmenge: **6**
+
+- Verpackungseinheit **Palette** enthält mindestens 25 **Kiste**
+- Verpackungseinheit **Container** enthält mindestens 500 **Kiste**
+!!!  
+- [!badge maximumQuantity] dient derzeit nur informativen Zwecken, verwendet und angezeit wird immer [!badge minimumQuantity]
+- Mehrere Verpackungseinheiten mittels Feld/Spaltenwiederholung darstellen
+
+unit1   | minimumQuantity1 | maximumQuantity1 | max.5 {class="compact"}
+---    | ---  | --- | ---
+[!badge variant="secondary" icon="note" text="Palette"] | [!badge variant="secondary" icon="note" text="25"] | [!badge variant="secondary" icon="note" text="50"] | ...
+
 ---
 ## Sonderpreise (optional)
 !!!
