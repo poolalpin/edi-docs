@@ -1,7 +1,7 @@
 ---
 label: Feldbeschreibung
 icon: list-unordered
-date: 2023-08-30
+date: 2023-09-15
 ---
 
 # Feldbeschreibung
@@ -27,6 +27,14 @@ Artikelnummern müssen **eindeutig** sein. Wird meist über eine Erweiterung hin
 *Stammtartikelnummer + Erweiterung*   
 [!badge variant="secondary" icon="note" text="123456-001"]
 !!!
+---
+## Hersteller-Artikelnummer
+||| Feldname
+[!badge manufacturerNumber]
+||| Format
+Text
+|||
+- Die Hersteller-Artikelnummer
 ---
 ## Varianten-Artikelcode
 ||| Feldname
