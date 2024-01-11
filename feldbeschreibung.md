@@ -262,7 +262,7 @@ boolean
 |||
 - Kennzeichnet den Artikel im Shop mit einem Öko-Label, nach dem auch gefiltert werden kann.
 ---
-## Warengruppen(n)
+## Warengruppe(n)
 ||| Feldname
 [!badge categories]
 ||| Format
