@@ -24,7 +24,7 @@ Text
 |||
 !!!warning Artikel mit Varianten und/oder Größen
 Artikelnummern müssen **eindeutig** sein. Wird meist über eine Erweiterung hinter der Artikelnummer gelöst:  
-*Stammtartikelnummer + Erweiterung*   
+*Stammartikelnummer + Erweiterung*   
 [!badge variant="secondary" icon="note" text="123456-001"]
 !!!
 ---
