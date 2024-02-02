@@ -1,7 +1,7 @@
 ---
 label: Feldbeschreibung
 icon: list-unordered
-date: 2023-09-15
+date: 2024-02-02
 ---
 
 # Feldbeschreibung
