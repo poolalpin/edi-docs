@@ -60,7 +60,7 @@ Ergänzend können die Sonderzeichen Bindestrich `-`, Unterstrich `_` und Punkt 
 ||| Feldname
 [!badge globalTradeItemNumber] :heavy_check_mark:
 ||| Format
-Text 
+Text (entweder **12** oder **13** Stellen sind möglich)
 |||
 - EAN-Code des Artikels 
 !!!success
