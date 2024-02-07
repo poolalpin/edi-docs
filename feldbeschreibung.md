@@ -233,7 +233,7 @@ Wenn Staffelpreise zur Anwendung kommen, werden diese über entsprechende Feldwi
 
 Preis1   | Ab Menge1 | Preis2 | Ab Menge2 | Preis3 | Ab Menge3 | max.5 {class="compact"}
 ---    | ---  | --- | --- | --- | --- | ---
-[!badge price1] :exclamation: | [!badge quantity1] :exclamation: | [!badge price2] :exclamation: | [!badge quantity2] :exclamation: | [!badge price2] :exclamation: | [!badge quantity2] :exclamation: | ...
+[!badge price1] | [!badge quantity1] | [!badge price2] | [!badge quantity2] | [!badge price2] | [!badge quantity2] | ...
 
 ---
 ## Hersteller
