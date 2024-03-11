@@ -317,7 +317,8 @@ files1   | files2 | files3 | max.5 {class="compact"}
 !!!danger Wenn ihre Produktbilder nicht online verfügbar sind?
 In diesem Fall benötigen wir sämtliche Bilder, um diese vor der Produkteinspielung zu importieren.  
 - Falls es sich um eine einmalige Übertragung weniger Bilder handelt, können diese gezippt oder über einen Filesharing-Dienst bereitgestellt werden.
-- Bei regelmässigen Übertragungen und grossen Datenmengen stellen wir Ihnen einen SFTP-Zugang zur Verfügung, auf den die Dateien geladen werden müssen.
+- Bei regelmässigen Übertragungen und grossen Datenmengen stellen wir Ihnen einen SFTP-Zugang zur Verfügung, auf den die Dateien geladen werden müssen.  
+\
 [!badge variant="warning" icon=":zap:" iconAlign="left" text="Vorsicht"] 
 Die angegebenen Dateinamen aus der Artikeltabelle müssen 1:1 mit den übermittelten Dateien übereinstimmen!  
 Groß/Kleinschreibung beachten. `Dateiname.jpg` ist nicht gleich `dateiname.JPG`  
