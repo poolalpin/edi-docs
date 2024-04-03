@@ -1,7 +1,7 @@
 ---
 label: Feldbeschreibung
 icon: list-unordered
-date: 2024-03-11
+date: 2024-04-03
 ---
 
 # Feldbeschreibung
@@ -295,6 +295,13 @@ Text
 - Ein oder mehrere Suchbegriffe für den Artikel
 - Mehrere Begriffe mit Komma, ohne Leerzeichen separieren  
 [!badge variant="secondary" icon="note" text="Begriff1,Begriff2,Begriff3,..."]
+!!!warning Sinnvoller Einsatz von Suchbegriffen
+Die Webshop-Suche basiert auf [Elasticsearch](https://www.elastic.co/de/elasticsearch/features) und berücksichtigt automatisch alle relevanten Artikelfelder.  
+Es ist daher nicht notwendig, Begriffe, die bereits in anderen Feldern stehen, zusätzlich als Suchbegriff zu definieren!  
+Empfohlene Suchbegriffe wären unter anderem:  
+- Wenn die Produktnummer Leerzeichen enthält: Produktnummer ohne Leerzeichen
+- Die Produktnummer eines nicht mehr erhältlichen Vorgängerprodukts
+!!!
 ---
 ## Artikelbilder und Dokumente
 ||| Feldname
