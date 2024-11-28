@@ -1,7 +1,7 @@
 ---
 label: Feldbeschreibung
 icon: list-unordered
-date: 2024-04-03
+date: 2024-11-28
 ---
 
 # Feldbeschreibung
@@ -348,7 +348,7 @@ Text
 
 - Alternativ können die Eigenschaften auch als Textkette in einem einzelnen Feld dargestellt werden.  
   Das vorherige Beispiel könnte dann so aussehen:  
-`Material=Stahl,Durchmesser=8mm,Länge=130cm`
+`Material=Stahl|Durchmesser=8mm|Länge=130cm`
 ---
 ## Lieferstatus
 ||| Feldname
