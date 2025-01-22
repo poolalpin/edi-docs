@@ -27,3 +27,9 @@ Bei Fragen stehen wir unter ebusiness@pool-alpin.com gerne zur Verfügung.
 ### Excel/CSV Kataloge
 
 - Sind weiterhin möglich, falls Sie keinen BMEcat erstellen können.
+
+### REST-API
+
+- Der eigentliche Import in den Webshop erfolgt mittels **JSON** via **REST-API**.
+  Falls es Ihnen möglich ist, dieses Format zu liefern, kann der Umweg über Katalogformate umgangen werden.
+  Für weitere Details gerne jederzeit Kontakt mit uns aufnehmen.
