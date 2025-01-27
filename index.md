@@ -10,7 +10,7 @@ Hier entsteht derzeit die technische Dokumentation zum Datenaustausch mit POOL-A
 ## Generelles
 
 - Wenn möglich, bevorzugen wir Kataloge im Format BMEcat mit Klassifizierung nach eClass.
-- Datenübermittlung bervorzugt via SFTP direkt auf unseren Server.
+- Datenübermittlung bevorzugt via SFTP direkt auf unseren Server.
 - Das frühere "Extranet" Self-Service Portal ist nicht mehr verfügbar.
 
 Bei Fragen stehen wir unter ebusiness@pool-alpin.com gerne zur Verfügung.
