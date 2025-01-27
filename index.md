@@ -34,7 +34,7 @@ Bei Fragen stehen wir unter ebusiness@pool-alpin.com gerne zur Verfügung.
   Falls es Ihnen möglich ist, dieses Format zu liefern, kann der Umweg über Katalogformate umgangen werden.  
   !!! :zap: API Docs
   Die Dokumentation der API finden sie unter https://shop.pool-alpin.com/synergy/api/docs/import  
-  Der Endpunkt **/synergy-import/api/imports/{id}/items** enthält die benötigte JSON-Struktur für Artikelimporte.
+  Der Endpunkt **/synergy-import/api/imports/id/items** enthält die benötigte JSON-Struktur für Artikelimporte.
   !!!
   
   Für weitere Details gerne jederzeit Kontakt mit uns aufnehmen.
