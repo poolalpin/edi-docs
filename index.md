@@ -32,4 +32,9 @@ Bei Fragen stehen wir unter ebusiness@pool-alpin.com gerne zur Verfügung.
 
 - Der eigentliche Import in den Webshop erfolgt mittels **JSON** via **REST-API**.  
   Falls es Ihnen möglich ist, dieses Format zu liefern, kann der Umweg über Katalogformate umgangen werden.  
+  !!! :zap: API Docs
+  Die Dokumentation der API finden sie unter https://shop.pool-alpin.com/synergy/api/docs/import  
+  Der Endpunkt **/synergy-import/api/imports/{id}/items** enthält die benötigte JSON-Struktur für Artikelimporte.
+  !!!
+  
   Für weitere Details gerne jederzeit Kontakt mit uns aufnehmen.
