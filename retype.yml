@@ -1,7 +1,7 @@
 input: .
 output: .retype
 locale: de
-url: docs.pool-alpin.work
+url: docs.poolalpin.work
 integrations:
   plausible:
     domain: docs.pool-alpin.work
