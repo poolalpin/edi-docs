@@ -3,9 +3,9 @@ output: .retype
 locale: de
 url: docs.poolalpin.work
 integrations:
-  plausible:
-    domain: docs.pool-alpin.work
-    host: plausible.pool-alpin.work
+#  plausible:
+#    domain: docs.pool-alpin.work
+#    host: plausible.pool-alpin.work
 branding:
   #title: POOL-ALPIN
   logo: static/pa_logo.png
