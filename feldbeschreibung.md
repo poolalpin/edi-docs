@@ -116,7 +116,7 @@ Inhaltsmenge: **6**
 !!!
 ---
 ### Inhaltseinheit (optional)
-!!! danger
+!!!danger
 Darf nur verwendet werden, wenn sich die Inhaltseinheit von der [Bestelleinheit](#bestelleinheit) unterscheidet.  
 In diesem Fall werden Inhaltseinheit und Inhaltsmenge zu **Pflichtfeldern**
 !!!
