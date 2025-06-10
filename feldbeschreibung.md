@@ -128,7 +128,7 @@ Text
 - Einheit des Produktes innerhalb einer Bestelleinheit
 ---
 ### Inhaltsmenge (optional)
-!!! danger
+!!!danger
 Wird eine [Inhaltseinheit](#inhaltseinheit-optional) verwendet, **muss** auch die Inhaltsmenge angegeben werden.
 !!!
 ||| Feldname
