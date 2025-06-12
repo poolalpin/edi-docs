@@ -224,7 +224,7 @@ Währungsname oder Symbol
 Ganz- oder Dezimalzahl
 |||
 !!!warning
-Es wird der **POOL-ALPIN Netto-Einkaufspreis** des Artikels erwartet.  
+Es wird der **POOLALPIN Netto-Einkaufspreis** des Artikels erwartet.  
 Zu berechnende prozentuale Abschläge anhand von Rabattlisten sind nicht möglich.  
 Im Zweifelsfall bitte mit uns Kontakt aufnehmen.
 !!!

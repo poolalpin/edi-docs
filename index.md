@@ -2,9 +2,9 @@
 icon: home
 label: Allgemein
 ---
-# Artikelimporte im POOL-ALPIN Webshop
+# Artikelimporte im POOLALPIN Webshop
 !!!
-Hier entsteht derzeit die technische Dokumentation zum Datenaustausch mit POOL-ALPIN
+Hier entsteht derzeit die technische Dokumentation zum Datenaustausch mit POOLALPIN
 !!!
 
 ## Generelles
