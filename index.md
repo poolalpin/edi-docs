@@ -13,7 +13,7 @@ Hier entsteht derzeit die technische Dokumentation zum Datenaustausch mit POOL-A
 - Datenübermittlung bevorzugt via SFTP direkt auf unseren Server.
 - Das frühere "Extranet" Self-Service Portal ist nicht mehr verfügbar.
 
-Bei Fragen stehen wir unter ebusiness@pool-alpin.com gerne zur Verfügung.
+Bei Fragen stehen wir unter ebusiness@poolalpin.com gerne zur Verfügung.
 
 ### BMEcat Formate
 
