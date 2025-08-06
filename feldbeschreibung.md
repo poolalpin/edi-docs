@@ -329,6 +329,7 @@ In diesem Fall benötigen wir sämtliche Bilder, um diese vor der Produkteinspie
 [!badge variant="warning" icon=":zap:" iconAlign="left" text="Vorsicht"] 
 Die angegebenen Dateinamen aus der Artikeltabelle müssen 1:1 mit den übermittelten Dateien übereinstimmen!  
 Groß/Kleinschreibung beachten. `Dateiname.jpg` ist nicht gleich `dateiname.JPG`  
+
 [!badge variant="success" icon=":white_check_mark:" iconAlign="left" text="Best Practice"] 
 Befolgen Sie am besten folgende Regel: Alle Dateinamen inklusive Endung immer in **Kleinschreibung ohne Umlaute, Sonderzeichen oder Leerzeichen**.
 !!!
