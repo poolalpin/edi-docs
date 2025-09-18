@@ -2,7 +2,7 @@
 icon: home
 label: Allgemein
 ---
-![](/static/home-header.jpg)
+![](/static/home-header.jpg){.rounded-lg}
 # Datenaustausch mit POOLALPIN
 !!!
 Hier entsteht derzeit die technische Dokumentation zum Datenaustausch mit POOLALPIN
