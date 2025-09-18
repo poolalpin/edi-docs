@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://docs.poolalpin.work/sitemap.xml.gz
+Sitemap: https://poolalpin.github.io/edi-docs/sitemap.xml.gz
