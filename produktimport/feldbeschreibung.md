@@ -53,7 +53,7 @@ Ergänzend können die Sonderzeichen Bindestrich `-`, Unterstrich `_` und Punkt 
 `Leerzeichen` `,` `;` `\` `/` `:` `*` `?` `"` `'` `<` `>` `|`
 !!!
 ==- Beispieldarstellung im Shop :icon-image:
-![Variantenanzeige im Shop](../static/variantenauswahl.png)
+![Variantenanzeige im Shop](/static/variantenauswahl.png)
 ===
 ---
 ## GTIN / EAN

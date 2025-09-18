@@ -2,7 +2,7 @@
 icon: home
 label: Allgemein
 ---
-# Artikelimporte im POOLALPIN Webshop
+# Datenaustausch mit POOLALPIN
 !!!
 Hier entsteht derzeit die technische Dokumentation zum Datenaustausch mit POOLALPIN
 !!!

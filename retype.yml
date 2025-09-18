@@ -1,18 +1,30 @@
 input: .
+
 output: .retype
+
 locale: de
+
 url: poolalpin.github.io/edi-docs/
+
 integrations:
   plausible:
     domain: poolalpin.github.io/edi-docs
     host: plausible.poolalpin.com
+
 branding:
-  #title: POOL-ALPIN
+  #title: POOLALPIN
   logo: static/pa_logo.png
   label: Docs
+
 links:
 #- text: Getting Started
 #  link: https://retype.com/guides/getting-started/
+
 footer:
   copyright: "&copy; Copyright {{ year }}. All rights reserved."
 
+start:
+  pro: true
+
+nav:
+  mode: stack

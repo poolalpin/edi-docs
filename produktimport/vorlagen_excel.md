@@ -1,10 +1,10 @@
 ---
 icon: file
-label: Excel Importvorlagen
+label: Excel Importvorlage
 order: -100
 ---
 !!!success
-Die möglichen Importfelder werden in der [Feldbeschreibung](/feldbeschreibung.md) erläutert.
+Die möglichen Importfelder werden in der [Feldbeschreibung](feldbeschreibung.md) erläutert.
 !!!
 !!!
 Diese Vorlage enthält alle erlaubten Importfelder.
