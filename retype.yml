@@ -1,10 +1,10 @@
 input: .
 output: .retype
 locale: de
-url: docs.poolalpin.work
+url: poolalpin.github.io/edi-docs/
 integrations:
   plausible:
-    domain: docs.poolalpin.work
+    domain: poolalpin.github.io/edi-docs
     host: plausible.poolalpin.com
 branding:
   #title: POOL-ALPIN
@@ -15,3 +15,4 @@ links:
 #  link: https://retype.com/guides/getting-started/
 footer:
   copyright: "&copy; Copyright {{ year }}. All rights reserved."
+
