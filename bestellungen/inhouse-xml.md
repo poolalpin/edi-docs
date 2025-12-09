@@ -31,6 +31,7 @@ Es reicht somit, die Lieferadresse jeweils aus der 1. Produktposition zu ermitte
         <id>123456</id>
         <name>Bergbahn AG Musterdorf</name>
         <gln>1234567890123</gln>
+        <supplierCustomerId>12345</supplierCustomerId>
     </customerAccount>
     <customerContact>
         <id>28869</id>
