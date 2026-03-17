@@ -360,16 +360,20 @@ Text
 |||
 - Gibt die Verfügbarkeit des Artikels an  
 
-!!!warning 4 mögliche Werte
-||| `available`
+!!!warning Einer von 5 möglichen Werten
+=== `available`
 Artikel immer verfügbar
-|||`not_available`
+=== `available_no_delivery_date`
+Artikel verfügbar aber Lieferzeit unbekannt
+=== `not_available`
 Artikel derzeit nicht erhältlich
-|||`on_request`
-Artikel muss angefragt werden
-|||`tracked`
-Artikel hat eine bestimmte Lieferzeit
-|||
+=== `on_request`
+Artikel muss angefragt werden. 
+Mit dieser Option wird kein Preis im Shop angezeigt. Stattdessen hat der Nutzer die Möglichkeit eine manuelle Anfrage durch unseren Einkauf auszulösen.
+![Darstellung im Shop|350](/static/price-on-request.png)
+=== `tracked`
+Artikel hat eine bestimmte Lieferzeit (Erfordert Anzahl Liefertage im Feld Lieferzeit `deliveryTime`)
+===
 !!!
 ---
 ## Lieferzeit
