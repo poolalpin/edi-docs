@@ -364,15 +364,15 @@ Text
 === `available`
 Artikel immer verfügbar
 === `available_no_delivery_date`
-Artikel verfügbar aber Lieferzeit unbekannt
+Artikel verfügbar, aber Lieferzeit unbekannt
 === `not_available`
 Artikel derzeit nicht erhältlich
+=== `tracked`
+Artikel hat eine bestimmte Lieferzeit (Erfordert Anzahl Liefertage im Feld Lieferzeit `deliveryTime`)
 === `on_request`
 Artikel muss angefragt werden. 
 Mit dieser Option wird kein Preis im Shop angezeigt. Stattdessen hat der Nutzer die Möglichkeit eine manuelle Anfrage durch unseren Einkauf auszulösen.
 ![Darstellung im Shop|350](/static/price-on-request.png)
-=== `tracked`
-Artikel hat eine bestimmte Lieferzeit (Erfordert Anzahl Liefertage im Feld Lieferzeit `deliveryTime`)
 ===
 !!!
 ---
