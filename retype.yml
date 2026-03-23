@@ -14,6 +14,7 @@ integrations:
 branding:
   #title: POOLALPIN
   logo: static/pa_logo.png
+  logoWidth: 100
   label: Docs
 
 links:
