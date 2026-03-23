@@ -13,7 +13,7 @@ integrations:
 
 branding:
   #title: POOLALPIN
-  logo: static/poolalpin-logo-blk.svg
+  logo: static/pa_logo.png
   label: Docs
 
 links:
