@@ -11,6 +11,15 @@ Nutzen Sie bitte die Feldbeschreibung, um Erklärungen zu den jeweiligen Spalten
 !!!base
 Bitte verwenden Sie wann immer möglich die [komplette Vorlage](#vorlage-komplett), damit ihre Produkte im POOL-Webshop optimal gefunden werden können.
 !!!
++++ Vorlage: Komplett
+!!!
+Diese Vorlage enthält alle erlaubten Importfelder.
+!!!
+!!!warning
+Die nicht benötigten Spalten können ausgeblendet, oder auch gelöscht werden.  
+Wichtig ist aber, dass die von ihnen gewählte Struktur mit jeder Übermittlung identisch bleibt!
+!!!
+[!file](/static/excel/pool-importvorlage-komplett.xlsx)
 +++ Vorlage: Minimalanforderung
 Die **minimale Anforderung** für einen Import in den POOL-Webshop, besteht aus folgenden Feldern:
 - [x] **Eindeutige Artikelnummer** [number]
@@ -32,13 +41,4 @@ Diese beiden Felder sind für Produkte notwendig, deren Inhalt genauer definiert
 Für 2 weitere Staffelpreise sind Spalten in der Vorlage vorhanden
 
 [!file](/static/excel/pool-importvorlage-minimal.xlsx)
-+++ Vorlage: Komplett
-!!!
-Diese Vorlage enthält alle erlaubten Importfelder.
-!!!
-!!!warning
-Die nicht benötigten Spalten können ausgeblendet, oder auch gelöscht werden.  
-Wichtig ist aber, dass die von ihnen gewählte Struktur mit jeder Übermittlung identisch bleibt!
-!!!
-[!file](/static/excel/pool-importvorlage-komplett.xlsx)
 +++
