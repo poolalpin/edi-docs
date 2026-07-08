@@ -1,7 +1,7 @@
 ---
 icon: home
 label: Allgemein
-date: 2026-03-23
+date: 2026-07-08
 ---
 ![](/static/home-header.jpg){.rounded-lg}
 # Datenaustausch mit POOLALPIN
