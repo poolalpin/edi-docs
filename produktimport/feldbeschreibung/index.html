@@ -7,24 +7,25 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
     <meta name="turbo-root" content="/edi-docs">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.4.0.827930982920">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.836837738135">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.4.0">
+    <meta name="generator" content="Retype 4.6.0">
 
     <!-- Primary Meta Tags -->
     <title>Feldbeschreibung</title>
     <meta name="title" content="Feldbeschreibung">
-    <meta name="description" content="Kennzeichnung | Beschreibung --- | --- ❗ | Pflichtfeld ✔️ | Empfohlenes Feld | Beispiel für den Feldinhalt">
+    <meta name="description" content="Kennzeichnung">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://poolalpin.github.io/edi-docs/produktimport/feldbeschreibung/">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://poolalpin.github.io/edi-docs/sitemap.xml">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://poolalpin.github.io/edi-docs/produktimport/feldbeschreibung/">
     <meta property="og:title" content="Feldbeschreibung">
-    <meta property="og:description" content="Kennzeichnung | Beschreibung --- | --- ❗ | Pflichtfeld ✔️ | Empfohlenes Feld | Beispiel für den Feldinhalt">
+    <meta property="og:description" content="Kennzeichnung">
     <meta property="og:image" content="https://poolalpin.github.io/edi-docs/static/variantenauswahl.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -36,18 +37,21 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://poolalpin.github.io/edi-docs/produktimport/feldbeschreibung/">
     <meta name="twitter:title" content="Feldbeschreibung">
-    <meta name="twitter:description" content="Kennzeichnung | Beschreibung --- | --- ❗ | Pflichtfeld ✔️ | Empfohlenes Feld | Beispiel für den Feldinhalt">
+    <meta name="twitter:description" content="Kennzeichnung">
     <meta name="twitter:image" content="https://poolalpin.github.io/edi-docs/static/variantenauswahl.png">
     <meta name="twitter:image:alt" content="Feldbeschreibung">
+
+    <!-- Alternate Markdown -->
+    <link rel="alternate" type="text/markdown" href="https://poolalpin.github.io/edi-docs/produktimport/feldbeschreibung.md">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../favicon.png" />
-    <link href="../../resources/css/retype.css?v=4.4.0.827930982920" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.836837738135" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.4.0.827930982920" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../resources/js/retype.js?v=4.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.4.0.827930982920" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.836837738135" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.836837738135" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -135,7 +139,7 @@
 <div class="flex">
     <div id="retype-main" class="min-w-0 p-4 grow md:px-16">
         <main class="relative pb-12 lg:pt-2">
-            <div class="retype-markdown" id="retype-content">
+            <div class="relative retype-markdown" id="retype-content">
                 <!-- Rendered if sidebar right is enabled -->
                 <div id="retype-sidebar-right-toggle"></div>
                 <nav id="retype-breadcrumb" class="breadcrumb" aria-label="Breadcrumb">
@@ -164,6 +168,8 @@
                     </ol>
                 </nav>
 
+                <doc-page-actions></doc-page-actions>
+
                 <!-- Page content  -->
 <h1 id="feldbeschreibung">Feldbeschreibung</h1>
 <div class="flex mb-6">
@@ -180,13 +186,39 @@
         </div>
         <div class="pr-5 ml-3 w-full">
             <h5>Verwendete Symbole und Kennzeichnungen</h5>
-<p class="compact">Kennzeichnung | Beschreibung --- | ---
-<span class="docs-emoji">&#x2757;</span> | Pflichtfeld
-<span class="docs-emoji">&#x2714;&#xFE0F;</span> | Empfohlenes Feld
-<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-secondary-text bg-badge-secondary border border-badge-secondary-border h-6 px-2 text-xs rounded-md">
+<retype-table copy-text="Kennzeichnung | Beschreibung
+--- | ---
+:exclamation: | Pflichtfeld
+:heavy_check_mark: | Empfohlenes Feld
+[!badge variant=&quot;secondary&quot; icon=&quot;note&quot; text=&quot;Beispieltext&quot;] | Beispiel für den Feldinhalt">
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Kennzeichnung</th>
+<th class="compact">Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="docs-emoji">&#x2757;</span></td>
+<td class="compact">Pflichtfeld</td>
+</tr>
+<tr>
+<td><span class="docs-emoji">&#x2714;&#xFE0F;</span></td>
+<td class="compact">Empfohlenes Feld</td>
+</tr>
+<tr>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-secondary-text bg-badge-secondary border border-badge-secondary-border h-6 px-2 text-xs rounded-md">
     <span class="inline-flex items-center justify-center leading-none mr-2"><svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0" width="18" height="18" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M0 4.75C0 3.784.784 3 1.75 3h20.5c.966 0 1.75.784 1.75 1.75v14.5A1.75 1.75 0 0 1 22.25 21H1.75A1.75 1.75 0 0 1 0 19.25Zm1.75-.25a.25.25 0 0 0-.25.25v14.5c0 .138.112.25.25.25h20.5a.25.25 0 0 0 .25-.25V4.75a.25.25 0 0 0-.25-.25Z"/><path d="M5 8.75A.75.75 0 0 1 5.75 8h11.5a.75.75 0 0 1 0 1.5H5.75A.75.75 0 0 1 5 8.75Zm0 4a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 0 1.5h-5.5a.75.75 0 0 1-.75-.75Z"/></g></svg></span>
     <span>Beispieltext</span>
-</span> | Beispiel für den Feldinhalt</p>
+</span></td>
+<td class="compact">Beispiel für den Feldinhalt</td>
+</tr>
+</tbody>
+</table>
+</div>
+</retype-table>
         </div>
     </div>
 </div>
@@ -482,10 +514,12 @@ Ergänzend können die Sonderzeichen Bindestrich <code translate="no" v-pre>-</c
     </div>
 </div>
 <ul>
-<li><p>Einheit, in der das Produkt bestellt werden kann; es können nur Vielfache dieser
+<li>
+<p>Einheit, in der das Produkt bestellt werden kann; es können nur Vielfache dieser
 Einheit bestellt werden.</p>
 </li>
-<li><p>Auf diese Einheit (oder auf Teile oder auf Vielfache davon) bezieht sich stets auch der
+<li>
+<p>Auf diese Einheit (oder auf Teile oder auf Vielfache davon) bezieht sich stets auch der
 Preis.</p>
 </li>
 </ul>
@@ -682,10 +716,16 @@ In diesem Fall werden Inhaltseinheit und Inhaltsmenge zu <strong>Pflichtfeldern<
     </div>
 </div>
 <ul>
-<li>Angabe der Staffelung, in der das Produkt bestellt werden kann</li>
-<li>Die Zählung für diese Staffelung beginnt stets mit der angegebenen
-Mindestbestellmenge.</li>
-<li>Die Einheit für die Mengenstaffel ist die Bestelleinheit.</li>
+<li>
+<p>Angabe der Staffelung, in der das Produkt bestellt werden kann</p>
+</li>
+<li>
+<p>Die Zählung für diese Staffelung beginnt stets mit der angegebenen
+Mindestbestellmenge.</p>
+</li>
+<li>
+<p>Die Einheit für die Mengenstaffel ist die Bestelleinheit.</p>
+</li>
 </ul>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
@@ -860,20 +900,48 @@ Im Zweifelsfall bitte mit uns Kontakt aufnehmen.</p>
 </div>
 <h3 id="staffelpreise-optional">Staffelpreise (optional)</h3>
 <p>Wenn Staffelpreise zur Anwendung kommen, werden diese über entsprechende Feldwiederholungen/Spalten realisiert:</p>
-<p class="compact">Preis1   | Ab Menge1 | Preis2 | Ab Menge2 | Preis3 | Ab Menge3 | max.5 ---    | ---  | --- | --- | --- | --- | ---
-<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
+<retype-table copy-text="Preis1   | Ab Menge1 | Preis2 | Ab Menge2 | Preis3 | Ab Menge3 | max.5
+---    | ---  | --- | --- | --- | --- | ---
+[!badge price1] | [!badge quantity1] | [!badge price2] | [!badge quantity2] | [!badge price2] | [!badge quantity2] | ...">
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Preis1</th>
+<th>Ab Menge1</th>
+<th>Preis2</th>
+<th>Ab Menge2</th>
+<th>Preis3</th>
+<th>Ab Menge3</th>
+<th class="compact">max.5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
     <span>price1</span>
-</span> | <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
+</span></td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
     <span>quantity1</span>
-</span> | <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
+</span></td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
     <span>price2</span>
-</span> | <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
+</span></td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
     <span>quantity2</span>
-</span> | <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
+</span></td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
     <span>price2</span>
-</span> | <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
+</span></td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
     <span>quantity2</span>
-</span> | ...</p>
+</span></td>
+<td class="compact">...</td>
+</tr>
+</tbody>
+</table>
+</div>
+</retype-table>
 <hr>
 <h2 id="hersteller">Hersteller</h2>
 <div class="mb-6 overflow-hidden border rounded-md docs-columns dark:border-base-border" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
@@ -967,17 +1035,39 @@ Im Zweifelsfall bitte mit uns Kontakt aufnehmen.</p>
 <li>Die zugehörige(n) Warengruppe(n) des Artikels</li>
 <li>Mehrere Warengruppen mittels Feld/Spaltenwiederholung darstellen</li>
 </ul>
-<p class="compact">categories1   | categories2 | categories3 | max.5 ---    | ---  | --- | ---
-<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-secondary-text bg-badge-secondary border border-badge-secondary-border h-6 px-2 text-xs rounded-md">
+<retype-table copy-text="categories1   | categories2 | categories3 | max.5
+---    | ---  | --- | ---
+[!badge variant=&quot;secondary&quot; icon=&quot;note&quot; text=&quot;Brotaufstriche&quot;] | [!badge variant=&quot;secondary&quot; icon=&quot;note&quot; text=&quot;Süßwaren&quot;] | [!badge variant=&quot;secondary&quot; icon=&quot;note&quot; text=&quot;Lebensmittel&quot;] | ...">
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>categories1</th>
+<th>categories2</th>
+<th>categories3</th>
+<th class="compact">max.5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-secondary-text bg-badge-secondary border border-badge-secondary-border h-6 px-2 text-xs rounded-md">
     <span class="inline-flex items-center justify-center leading-none mr-2"><svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0" width="18" height="18" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M0 4.75C0 3.784.784 3 1.75 3h20.5c.966 0 1.75.784 1.75 1.75v14.5A1.75 1.75 0 0 1 22.25 21H1.75A1.75 1.75 0 0 1 0 19.25Zm1.75-.25a.25.25 0 0 0-.25.25v14.5c0 .138.112.25.25.25h20.5a.25.25 0 0 0 .25-.25V4.75a.25.25 0 0 0-.25-.25Z"/><path d="M5 8.75A.75.75 0 0 1 5.75 8h11.5a.75.75 0 0 1 0 1.5H5.75A.75.75 0 0 1 5 8.75Zm0 4a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 0 1.5h-5.5a.75.75 0 0 1-.75-.75Z"/></g></svg></span>
     <span>Brotaufstriche</span>
-</span> | <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-secondary-text bg-badge-secondary border border-badge-secondary-border h-6 px-2 text-xs rounded-md">
+</span></td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-secondary-text bg-badge-secondary border border-badge-secondary-border h-6 px-2 text-xs rounded-md">
     <span class="inline-flex items-center justify-center leading-none mr-2"><svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0" width="18" height="18" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M0 4.75C0 3.784.784 3 1.75 3h20.5c.966 0 1.75.784 1.75 1.75v14.5A1.75 1.75 0 0 1 22.25 21H1.75A1.75 1.75 0 0 1 0 19.25Zm1.75-.25a.25.25 0 0 0-.25.25v14.5c0 .138.112.25.25.25h20.5a.25.25 0 0 0 .25-.25V4.75a.25.25 0 0 0-.25-.25Z"/><path d="M5 8.75A.75.75 0 0 1 5.75 8h11.5a.75.75 0 0 1 0 1.5H5.75A.75.75 0 0 1 5 8.75Zm0 4a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 0 1.5h-5.5a.75.75 0 0 1-.75-.75Z"/></g></svg></span>
     <span>Süßwaren</span>
-</span> | <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-secondary-text bg-badge-secondary border border-badge-secondary-border h-6 px-2 text-xs rounded-md">
+</span></td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-secondary-text bg-badge-secondary border border-badge-secondary-border h-6 px-2 text-xs rounded-md">
     <span class="inline-flex items-center justify-center leading-none mr-2"><svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0" width="18" height="18" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M0 4.75C0 3.784.784 3 1.75 3h20.5c.966 0 1.75.784 1.75 1.75v14.5A1.75 1.75 0 0 1 22.25 21H1.75A1.75 1.75 0 0 1 0 19.25Zm1.75-.25a.25.25 0 0 0-.25.25v14.5c0 .138.112.25.25.25h20.5a.25.25 0 0 0 .25-.25V4.75a.25.25 0 0 0-.25-.25Z"/><path d="M5 8.75A.75.75 0 0 1 5.75 8h11.5a.75.75 0 0 1 0 1.5H5.75A.75.75 0 0 1 5 8.75Zm0 4a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 0 1.5h-5.5a.75.75 0 0 1-.75-.75Z"/></g></svg></span>
     <span>Lebensmittel</span>
-</span> | ...</p>
+</span></td>
+<td class="compact">...</td>
+</tr>
+</tbody>
+</table>
+</div>
+</retype-table>
 <hr>
 <h2 id="eclass">eClass</h2>
 <div class="mb-6 overflow-hidden border rounded-md docs-columns dark:border-base-border" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
@@ -1102,17 +1192,39 @@ Empfohlene Suchbegriffe wären unter anderem:</p>
 <li>Die erste Bilddatei wird zum Vorschaubild</li>
 <li>Mehrere Dateien mittels Feld/Spaltenwiederholung darstellen</li>
 </ul>
-<p class="compact">files1   | files2 | files3 | max.5 ---    | ---  | --- | ---
-<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-secondary-text bg-badge-secondary border border-badge-secondary-border h-6 px-2 text-xs rounded-md">
+<retype-table copy-text="files1   | files2 | files3 | max.5
+---    | ---  | --- | ---
+[!badge variant=&quot;secondary&quot; icon=&quot;note&quot; text=&quot;http(s)://example.com/bilder/artikelbild1.jpg&quot;] | [!badge variant=&quot;secondary&quot; icon=&quot;note&quot; text=&quot;http(s)://example.com/bilder/artikelbild2.jpg&quot;] | [!badge variant=&quot;secondary&quot; icon=&quot;note&quot; text=&quot;http(s)://example.com/bilder/datenblatt1.pdf&quot;] | ...">
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>files1</th>
+<th>files2</th>
+<th>files3</th>
+<th class="compact">max.5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-secondary-text bg-badge-secondary border border-badge-secondary-border h-6 px-2 text-xs rounded-md">
     <span class="inline-flex items-center justify-center leading-none mr-2"><svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0" width="18" height="18" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M0 4.75C0 3.784.784 3 1.75 3h20.5c.966 0 1.75.784 1.75 1.75v14.5A1.75 1.75 0 0 1 22.25 21H1.75A1.75 1.75 0 0 1 0 19.25Zm1.75-.25a.25.25 0 0 0-.25.25v14.5c0 .138.112.25.25.25h20.5a.25.25 0 0 0 .25-.25V4.75a.25.25 0 0 0-.25-.25Z"/><path d="M5 8.75A.75.75 0 0 1 5.75 8h11.5a.75.75 0 0 1 0 1.5H5.75A.75.75 0 0 1 5 8.75Zm0 4a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 0 1.5h-5.5a.75.75 0 0 1-.75-.75Z"/></g></svg></span>
     <span>http(s)://example.com/bilder/artikelbild1.jpg</span>
-</span> | <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-secondary-text bg-badge-secondary border border-badge-secondary-border h-6 px-2 text-xs rounded-md">
+</span></td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-secondary-text bg-badge-secondary border border-badge-secondary-border h-6 px-2 text-xs rounded-md">
     <span class="inline-flex items-center justify-center leading-none mr-2"><svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0" width="18" height="18" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M0 4.75C0 3.784.784 3 1.75 3h20.5c.966 0 1.75.784 1.75 1.75v14.5A1.75 1.75 0 0 1 22.25 21H1.75A1.75 1.75 0 0 1 0 19.25Zm1.75-.25a.25.25 0 0 0-.25.25v14.5c0 .138.112.25.25.25h20.5a.25.25 0 0 0 .25-.25V4.75a.25.25 0 0 0-.25-.25Z"/><path d="M5 8.75A.75.75 0 0 1 5.75 8h11.5a.75.75 0 0 1 0 1.5H5.75A.75.75 0 0 1 5 8.75Zm0 4a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 0 1.5h-5.5a.75.75 0 0 1-.75-.75Z"/></g></svg></span>
     <span>http(s)://example.com/bilder/artikelbild2.jpg</span>
-</span> | <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-secondary-text bg-badge-secondary border border-badge-secondary-border h-6 px-2 text-xs rounded-md">
+</span></td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-secondary-text bg-badge-secondary border border-badge-secondary-border h-6 px-2 text-xs rounded-md">
     <span class="inline-flex items-center justify-center leading-none mr-2"><svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0" width="18" height="18" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M0 4.75C0 3.784.784 3 1.75 3h20.5c.966 0 1.75.784 1.75 1.75v14.5A1.75 1.75 0 0 1 22.25 21H1.75A1.75 1.75 0 0 1 0 19.25Zm1.75-.25a.25.25 0 0 0-.25.25v14.5c0 .138.112.25.25.25h20.5a.25.25 0 0 0 .25-.25V4.75a.25.25 0 0 0-.25-.25Z"/><path d="M5 8.75A.75.75 0 0 1 5.75 8h11.5a.75.75 0 0 1 0 1.5H5.75A.75.75 0 0 1 5 8.75Zm0 4a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 0 1.5h-5.5a.75.75 0 0 1-.75-.75Z"/></g></svg></span>
     <span>http(s)://example.com/bilder/datenblatt1.pdf</span>
-</span> | ...</p>
+</span></td>
+<td class="compact">...</td>
+</tr>
+</tbody>
+</table>
+</div>
+</retype-table>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-danger"></div>
     <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
@@ -1167,26 +1279,48 @@ Befolgen Sie am besten folgende Regel: Alle Dateinamen inklusive Endung immer in
 <li>Hiermit können weitere Artikeleigenschaften definiert werden, die in der Artikeldetailansicht angezeigt werden</li>
 <li>Mehrere Eigenschaften mittels Feld/Spaltenwiederholung darstellen, wobei der <mark>Spaltenname</mark> die <mark>Bezeichnung</mark> und der <mark>Feldinhalt</mark> den <mark>Wert</mark> darstellt</li>
 </ul>
-<p class="compact"><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-secondary-text bg-badge-secondary border border-badge-secondary-border h-6 px-2 text-xs rounded-md">
+<retype-table copy-text="[!badge variant=&quot;secondary&quot; icon=&quot;note&quot; text=&quot;Material&quot;]   | [!badge variant=&quot;secondary&quot; icon=&quot;note&quot; text=&quot;Durchmesser&quot;] | [!badge variant=&quot;secondary&quot; icon=&quot;note&quot; text=&quot;Länge&quot;] | max.5
+---    | ---  | --- | ---
+[!badge variant=&quot;secondary&quot; icon=&quot;note&quot; text=&quot;Stahl&quot;]   | [!badge variant=&quot;secondary&quot; icon=&quot;note&quot; text=&quot;8 mm&quot;] | [!badge variant=&quot;secondary&quot; icon=&quot;note&quot; text=&quot;130 cm&quot;] | ...">
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-secondary-text bg-badge-secondary border border-badge-secondary-border h-6 px-2 text-xs rounded-md">
     <span class="inline-flex items-center justify-center leading-none mr-2"><svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0" width="18" height="18" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M0 4.75C0 3.784.784 3 1.75 3h20.5c.966 0 1.75.784 1.75 1.75v14.5A1.75 1.75 0 0 1 22.25 21H1.75A1.75 1.75 0 0 1 0 19.25Zm1.75-.25a.25.25 0 0 0-.25.25v14.5c0 .138.112.25.25.25h20.5a.25.25 0 0 0 .25-.25V4.75a.25.25 0 0 0-.25-.25Z"/><path d="M5 8.75A.75.75 0 0 1 5.75 8h11.5a.75.75 0 0 1 0 1.5H5.75A.75.75 0 0 1 5 8.75Zm0 4a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 0 1.5h-5.5a.75.75 0 0 1-.75-.75Z"/></g></svg></span>
     <span>Material</span>
-</span>   | <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-secondary-text bg-badge-secondary border border-badge-secondary-border h-6 px-2 text-xs rounded-md">
+</span></th>
+<th><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-secondary-text bg-badge-secondary border border-badge-secondary-border h-6 px-2 text-xs rounded-md">
     <span class="inline-flex items-center justify-center leading-none mr-2"><svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0" width="18" height="18" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M0 4.75C0 3.784.784 3 1.75 3h20.5c.966 0 1.75.784 1.75 1.75v14.5A1.75 1.75 0 0 1 22.25 21H1.75A1.75 1.75 0 0 1 0 19.25Zm1.75-.25a.25.25 0 0 0-.25.25v14.5c0 .138.112.25.25.25h20.5a.25.25 0 0 0 .25-.25V4.75a.25.25 0 0 0-.25-.25Z"/><path d="M5 8.75A.75.75 0 0 1 5.75 8h11.5a.75.75 0 0 1 0 1.5H5.75A.75.75 0 0 1 5 8.75Zm0 4a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 0 1.5h-5.5a.75.75 0 0 1-.75-.75Z"/></g></svg></span>
     <span>Durchmesser</span>
-</span> | <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-secondary-text bg-badge-secondary border border-badge-secondary-border h-6 px-2 text-xs rounded-md">
+</span></th>
+<th><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-secondary-text bg-badge-secondary border border-badge-secondary-border h-6 px-2 text-xs rounded-md">
     <span class="inline-flex items-center justify-center leading-none mr-2"><svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0" width="18" height="18" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M0 4.75C0 3.784.784 3 1.75 3h20.5c.966 0 1.75.784 1.75 1.75v14.5A1.75 1.75 0 0 1 22.25 21H1.75A1.75 1.75 0 0 1 0 19.25Zm1.75-.25a.25.25 0 0 0-.25.25v14.5c0 .138.112.25.25.25h20.5a.25.25 0 0 0 .25-.25V4.75a.25.25 0 0 0-.25-.25Z"/><path d="M5 8.75A.75.75 0 0 1 5.75 8h11.5a.75.75 0 0 1 0 1.5H5.75A.75.75 0 0 1 5 8.75Zm0 4a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 0 1.5h-5.5a.75.75 0 0 1-.75-.75Z"/></g></svg></span>
     <span>Länge</span>
-</span> | max.5 ---    | ---  | --- | ---
-<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-secondary-text bg-badge-secondary border border-badge-secondary-border h-6 px-2 text-xs rounded-md">
+</span></th>
+<th class="compact">max.5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-secondary-text bg-badge-secondary border border-badge-secondary-border h-6 px-2 text-xs rounded-md">
     <span class="inline-flex items-center justify-center leading-none mr-2"><svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0" width="18" height="18" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M0 4.75C0 3.784.784 3 1.75 3h20.5c.966 0 1.75.784 1.75 1.75v14.5A1.75 1.75 0 0 1 22.25 21H1.75A1.75 1.75 0 0 1 0 19.25Zm1.75-.25a.25.25 0 0 0-.25.25v14.5c0 .138.112.25.25.25h20.5a.25.25 0 0 0 .25-.25V4.75a.25.25 0 0 0-.25-.25Z"/><path d="M5 8.75A.75.75 0 0 1 5.75 8h11.5a.75.75 0 0 1 0 1.5H5.75A.75.75 0 0 1 5 8.75Zm0 4a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 0 1.5h-5.5a.75.75 0 0 1-.75-.75Z"/></g></svg></span>
     <span>Stahl</span>
-</span>   | <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-secondary-text bg-badge-secondary border border-badge-secondary-border h-6 px-2 text-xs rounded-md">
+</span></td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-secondary-text bg-badge-secondary border border-badge-secondary-border h-6 px-2 text-xs rounded-md">
     <span class="inline-flex items-center justify-center leading-none mr-2"><svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0" width="18" height="18" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M0 4.75C0 3.784.784 3 1.75 3h20.5c.966 0 1.75.784 1.75 1.75v14.5A1.75 1.75 0 0 1 22.25 21H1.75A1.75 1.75 0 0 1 0 19.25Zm1.75-.25a.25.25 0 0 0-.25.25v14.5c0 .138.112.25.25.25h20.5a.25.25 0 0 0 .25-.25V4.75a.25.25 0 0 0-.25-.25Z"/><path d="M5 8.75A.75.75 0 0 1 5.75 8h11.5a.75.75 0 0 1 0 1.5H5.75A.75.75 0 0 1 5 8.75Zm0 4a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 0 1.5h-5.5a.75.75 0 0 1-.75-.75Z"/></g></svg></span>
     <span>8 mm</span>
-</span> | <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-secondary-text bg-badge-secondary border border-badge-secondary-border h-6 px-2 text-xs rounded-md">
+</span></td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-secondary-text bg-badge-secondary border border-badge-secondary-border h-6 px-2 text-xs rounded-md">
     <span class="inline-flex items-center justify-center leading-none mr-2"><svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0" width="18" height="18" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M0 4.75C0 3.784.784 3 1.75 3h20.5c.966 0 1.75.784 1.75 1.75v14.5A1.75 1.75 0 0 1 22.25 21H1.75A1.75 1.75 0 0 1 0 19.25Zm1.75-.25a.25.25 0 0 0-.25.25v14.5c0 .138.112.25.25.25h20.5a.25.25 0 0 0 .25-.25V4.75a.25.25 0 0 0-.25-.25Z"/><path d="M5 8.75A.75.75 0 0 1 5.75 8h11.5a.75.75 0 0 1 0 1.5H5.75A.75.75 0 0 1 5 8.75Zm0 4a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 0 1.5h-5.5a.75.75 0 0 1-.75-.75Z"/></g></svg></span>
     <span>130 cm</span>
-</span> | ...</p>
+</span></td>
+<td class="compact">...</td>
+</tr>
+</tbody>
+</table>
+</div>
+</retype-table>
 <ul>
 <li>Alternativ können die Eigenschaften auch als Textkette in einem einzelnen Feld dargestellt werden.<br />
 Das vorherige Beispiel könnte dann so aussehen:<br />
@@ -1243,7 +1377,7 @@ Das vorherige Beispiel könnte dann so aussehen:<br />
    </doc-panel>
    <doc-panel id="not_available">
        <template #title><code translate="no" v-pre>not_available</code></template>
-<p>Artikel derzeit nicht erhältlich</p>
+<p>Artikel derzeit nicht erhältlich. <span style="color: #FF6A6D;">Mit dieser Option wird kein Preis im Shop angezeigt.</span></p>
    </doc-panel>
    <doc-panel id="tracked">
        <template #title><code translate="no" v-pre>tracked</code></template>
@@ -1252,7 +1386,7 @@ Das vorherige Beispiel könnte dann so aussehen:<br />
    <doc-panel id="on_request">
        <template #title><code translate="no" v-pre>on_request</code></template>
 <p>Artikel muss angefragt werden.
-Mit dieser Option wird kein Preis im Shop angezeigt. Stattdessen hat der Nutzer die Möglichkeit eine manuelle Anfrage durch unseren Einkauf auszulösen.
+<span style="color: #FF6A6D;">Mit dieser Option wird kein Preis im Shop angezeigt.</span> Stattdessen hat der Nutzer die Möglichkeit eine manuelle Anfrage durch unseren Einkauf auszulösen.
 <figure class="content-center">
     <img src="../../static/price-on-request.png" alt="Darstellung im Shop" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="350" />
     <figcaption class="caption">Darstellung im Shop</figcaption>
@@ -1444,17 +1578,39 @@ Inhaltsmenge: <strong>6</strong></p>
 </span></li>
 <li>Mehrere Verpackungseinheiten mittels Feld/Spaltenwiederholung darstellen</li>
 </ul>
-<p class="compact">unit1   | minimumQuantity1 | maximumQuantity1 | max.5 ---    | ---  | --- | ---
-<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-secondary-text bg-badge-secondary border border-badge-secondary-border h-6 px-2 text-xs rounded-md">
+<retype-table copy-text="unit1   | minimumQuantity1 | maximumQuantity1 | max.5
+---    | ---  | --- | ---
+[!badge variant=&quot;secondary&quot; icon=&quot;note&quot; text=&quot;Palette&quot;] | [!badge variant=&quot;secondary&quot; icon=&quot;note&quot; text=&quot;25&quot;] | [!badge variant=&quot;secondary&quot; icon=&quot;note&quot; text=&quot;50&quot;] | ...">
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>unit1</th>
+<th>minimumQuantity1</th>
+<th>maximumQuantity1</th>
+<th class="compact">max.5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-secondary-text bg-badge-secondary border border-badge-secondary-border h-6 px-2 text-xs rounded-md">
     <span class="inline-flex items-center justify-center leading-none mr-2"><svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0" width="18" height="18" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M0 4.75C0 3.784.784 3 1.75 3h20.5c.966 0 1.75.784 1.75 1.75v14.5A1.75 1.75 0 0 1 22.25 21H1.75A1.75 1.75 0 0 1 0 19.25Zm1.75-.25a.25.25 0 0 0-.25.25v14.5c0 .138.112.25.25.25h20.5a.25.25 0 0 0 .25-.25V4.75a.25.25 0 0 0-.25-.25Z"/><path d="M5 8.75A.75.75 0 0 1 5.75 8h11.5a.75.75 0 0 1 0 1.5H5.75A.75.75 0 0 1 5 8.75Zm0 4a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 0 1.5h-5.5a.75.75 0 0 1-.75-.75Z"/></g></svg></span>
     <span>Palette</span>
-</span> | <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-secondary-text bg-badge-secondary border border-badge-secondary-border h-6 px-2 text-xs rounded-md">
+</span></td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-secondary-text bg-badge-secondary border border-badge-secondary-border h-6 px-2 text-xs rounded-md">
     <span class="inline-flex items-center justify-center leading-none mr-2"><svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0" width="18" height="18" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M0 4.75C0 3.784.784 3 1.75 3h20.5c.966 0 1.75.784 1.75 1.75v14.5A1.75 1.75 0 0 1 22.25 21H1.75A1.75 1.75 0 0 1 0 19.25Zm1.75-.25a.25.25 0 0 0-.25.25v14.5c0 .138.112.25.25.25h20.5a.25.25 0 0 0 .25-.25V4.75a.25.25 0 0 0-.25-.25Z"/><path d="M5 8.75A.75.75 0 0 1 5.75 8h11.5a.75.75 0 0 1 0 1.5H5.75A.75.75 0 0 1 5 8.75Zm0 4a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 0 1.5h-5.5a.75.75 0 0 1-.75-.75Z"/></g></svg></span>
     <span>25</span>
-</span> | <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-secondary-text bg-badge-secondary border border-badge-secondary-border h-6 px-2 text-xs rounded-md">
+</span></td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-secondary-text bg-badge-secondary border border-badge-secondary-border h-6 px-2 text-xs rounded-md">
     <span class="inline-flex items-center justify-center leading-none mr-2"><svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0" width="18" height="18" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M0 4.75C0 3.784.784 3 1.75 3h20.5c.966 0 1.75.784 1.75 1.75v14.5A1.75 1.75 0 0 1 22.25 21H1.75A1.75 1.75 0 0 1 0 19.25Zm1.75-.25a.25.25 0 0 0-.25.25v14.5c0 .138.112.25.25.25h20.5a.25.25 0 0 0 .25-.25V4.75a.25.25 0 0 0-.25-.25Z"/><path d="M5 8.75A.75.75 0 0 1 5.75 8h11.5a.75.75 0 0 1 0 1.5H5.75A.75.75 0 0 1 5 8.75Zm0 4a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 0 1.5h-5.5a.75.75 0 0 1-.75-.75Z"/></g></svg></span>
     <span>50</span>
-</span> | ...</p>
+</span></td>
+<td class="compact">...</td>
+</tr>
+</tbody>
+</table>
+</div>
+</retype-table>
 <hr>
 <h2 id="sonderpreise-optional">Sonderpreise (optional)</h2>
 <div class="flex mb-6">
@@ -1478,14 +1634,34 @@ Inhaltsmenge: <strong>6</strong></p>
 <li><span class="docs-emoji">&#x2139;&#xFE0F;</span> Aktuell sind keine Staffel-Sonderpreise möglich</li>
 <li>Am Ende einer Artikelzeile folgende Spalten anängen:</li>
 </ul>
-<p class="compact"><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
+<retype-table copy-text="[!badge specialPrice]   | [!badge startDate] | [!badge endDate]
+---    | ---  | --- 
+`preis` | `Datum von` | `Datum bis`">
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
     <span>specialPrice</span>
-</span>   | <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
+</span></th>
+<th><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
     <span>startDate</span>
-</span> | <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
+</span></th>
+<th class="compact"><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
     <span>endDate</span>
-</span> ---    | ---  | ---
-<code translate="no" v-pre>preis</code> | <code translate="no" v-pre>Datum von</code> | <code translate="no" v-pre>Datum bis</code></p>
+</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code translate="no" v-pre>preis</code></td>
+<td><code translate="no" v-pre>Datum von</code></td>
+<td class="compact"><code translate="no" v-pre>Datum bis</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+</retype-table>
 <div id="retype-backlinks">
     <h2>Siehe auch</h2>
 <div class="card-compact-group">
@@ -1568,6 +1744,6 @@ Inhaltsmenge: <strong>6</strong></p>
 
     <div id="retype-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Feldbeschreibung", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+        <script data-cfasync="false">window.__DOCS__ = { "title": "Feldbeschreibung", level: 2, icon: "file", hasPrism: false, hasInstagram: false, hasMermaid: false, hasMath: false, tocDepth: 23, "md": "/produktimport/feldbeschreibung.md" }</script>
 </body>
 </html>

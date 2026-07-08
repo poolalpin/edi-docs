@@ -1,0 +1,14 @@
+﻿# Datenaustausch mit POOLALPIN
+
+> Hier entsteht derzeit die technische Dokumentation zum Datenaustausch mit POOLALPIN
+
+- [Datenaustausch mit POOLALPIN](https://poolalpin.github.io/edi-docs/home.md): Datenaustausch mit POOLALPIN
+
+## Produktimport
+
+- [Feldbeschreibung](https://poolalpin.github.io/edi-docs/produktimport/feldbeschreibung.md): Kennzeichnung
+- [Excel Importvorlagen](https://poolalpin.github.io/edi-docs/produktimport/vorlagen_excel.md): Nutzen Sie bitte die Feldbeschreibung, um Erklärungen zu den jeweiligen Spalten in den Excel-Vorlagen zu erhalten.
+
+## Bestellungen
+
+- [Pool XML-Bestellung](https://poolalpin.github.io/edi-docs/bestellungen/inhouse-xml.md): Aktuell steht für die Übermittlung von Bestellungen ein internes XML-Format zur Verfügung, das für den Import von Bestellungen auf Lieferantenseite verwendet werden kann.

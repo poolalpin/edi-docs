@@ -7,24 +7,25 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
     <meta name="turbo-root" content="/edi-docs">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.4.0.827930982920">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.836837738135">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.4.0">
+    <meta name="generator" content="Retype 4.6.0">
 
     <!-- Primary Meta Tags -->
     <title>Pool XML-Bestellung</title>
     <meta name="title" content="Pool XML-Bestellung">
-    <meta name="description" content="Aktuell steht für die Übermittlung von Bestellungen ein internes XML-Format zur Verfügung, das für den Import von Bestellungen auf Lieferantenseite">
+    <meta name="description" content="Aktuell steht für die Übermittlung von Bestellungen ein internes XML-Format zur Verfügung, das für den Import von Bestellungen auf Lieferantenseite verwendet werden kann.">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://poolalpin.github.io/edi-docs/bestellungen/inhouse-xml/">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://poolalpin.github.io/edi-docs/sitemap.xml">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://poolalpin.github.io/edi-docs/bestellungen/inhouse-xml/">
     <meta property="og:title" content="Pool XML-Bestellung">
-    <meta property="og:description" content="Aktuell steht für die Übermittlung von Bestellungen ein internes XML-Format zur Verfügung, das für den Import von Bestellungen auf Lieferantenseite">
+    <meta property="og:description" content="Aktuell steht für die Übermittlung von Bestellungen ein internes XML-Format zur Verfügung, das für den Import von Bestellungen auf Lieferantenseite verwendet werden kann.">
     <meta property="og:site_name" content="">
     <meta property="og:locale" content="de_DE">
 
@@ -32,17 +33,20 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://poolalpin.github.io/edi-docs/bestellungen/inhouse-xml/">
     <meta name="twitter:title" content="Pool XML-Bestellung">
-    <meta name="twitter:description" content="Aktuell steht für die Übermittlung von Bestellungen ein internes XML-Format zur Verfügung, das für den Import von Bestellungen auf Lieferantenseite">
+    <meta name="twitter:description" content="Aktuell steht für die Übermittlung von Bestellungen ein internes XML-Format zur Verfügung, das für den Import von Bestellungen auf Lieferantenseite verwendet werden kann.">
+
+    <!-- Alternate Markdown -->
+    <link rel="alternate" type="text/markdown" href="https://poolalpin.github.io/edi-docs/bestellungen/inhouse-xml.md">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../favicon.png" />
-    <link href="../../resources/css/retype.css?v=4.4.0.827930982920" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.836837738135" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.4.0.827930982920" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../resources/js/retype.js?v=4.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.4.0.827930982920" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=4.4.0.827930982920" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.836837738135" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.836837738135" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=4.6.0.836837738135" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -130,7 +134,7 @@
 <div class="flex">
     <div id="retype-main" class="min-w-0 p-4 grow md:px-16">
         <main class="relative pb-12 lg:pt-2">
-            <div class="retype-markdown" id="retype-content">
+            <div class="relative retype-markdown" id="retype-content">
                 <!-- Rendered if sidebar right is enabled -->
                 <div id="retype-sidebar-right-toggle"></div>
                 <nav id="retype-breadcrumb" class="breadcrumb" aria-label="Breadcrumb">
@@ -158,6 +162,8 @@
                         </li>
                     </ol>
                 </nav>
+
+                <doc-page-actions></doc-page-actions>
 
                 <!-- Page content  -->
 <h1 id="pool-xml-bestellung">Pool XML-Bestellung</h1>
@@ -464,6 +470,6 @@ Es reicht somit, die Lieferadresse jeweils aus der 1. Produktposition zu ermitte
 
     <div id="retype-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Pool XML-Bestellung", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+        <script data-cfasync="false">window.__DOCS__ = { "title": "Pool XML-Bestellung", level: 2, icon: "file", hasPrism: true, hasInstagram: false, hasMermaid: false, hasMath: false, tocDepth: 23, "md": "/bestellungen/inhouse-xml.md" }</script>
 </body>
 </html>
