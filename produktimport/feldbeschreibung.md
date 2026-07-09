@@ -399,7 +399,7 @@ Text
 |||`in_stock`
 Artikel immer lagernd
 |||`sold_out`
-Artikel derzeit nicht am Lager
+Artikel derzeit nicht am Lager. <span style="color: #CC0000;">Mit dieser Option wird kein Preis im Shop angezeigt.</span>
 |||`tracked`
 Begrenzte Artikelzahl verfügbar
 |||
